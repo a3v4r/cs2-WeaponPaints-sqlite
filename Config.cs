@@ -92,7 +92,7 @@ namespace WeaponPaints
 		public string DatabaseName { get; set; } = "";
 
 		[JsonPropertyName("DatabaseType")]
-		public string DatabaseType { get; set; } = "MySQL";
+		public string DatabaseType { get; set; } = "SQLite";
 
 		[JsonPropertyName("SqliteFilePath")]
 		public string SqliteFilePath { get; set; } = "weapon_paints.db";
