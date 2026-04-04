@@ -425,7 +425,9 @@ namespace WeaponPaints
 					if (!string.IsNullOrEmpty(model))
 					{
 						pawn.SetModel("characters/models/tm_jumpsuit/tm_jumpsuit_varianta.vmdl");
-						pawn.SetModel(model);
+						Instance.AddTimer(0.01f, () => {
+							if (pawn.IsValid) pawn.SetModel(model);
+						});
 					}
 					
 					SetBodygroup(pawn, "default_gloves", 1);
