@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CounterStrikeSharp.API" Version="1.0.361" />
+    <PackageReference Include="CounterStrikeSharp.API" Version="1.0.361">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="MySqlConnector" Version="2.5.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
@@ -18,15 +21,14 @@
 
   <ItemGroup>
     <None Update="lang\**\*.*" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Update="data\**\*.*" CopyToOutputDirectory="PreserveNewest" />
     <None Update="gamedata\*.*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="MenuManagerApi">
       <HintPath>3rd_party\MenuManagerApi.dll</HintPath>
+      <Private>true</Private>
     </Reference>
   </ItemGroup>
 </Project>

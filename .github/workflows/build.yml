@@ -1,0 +1,62 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Prepare Plugin Folder
+      run: |
+        mkdir -p publish/addons/counterstrikesharp/plugins/WeaponPaints
+        mkdir -p publish/addons/counterstrikesharp/gamedata
+        
+        # Copy build output to plugin folder
+        cp -r bin/Release/net8.0/* publish/addons/counterstrikesharp/plugins/WeaponPaints/
+        
+        # Remove redundant API DLL (it should already be excluded by csproj, but double-check)
+        rm -f publish/addons/counterstrikesharp/plugins/WeaponPaints/CounterStrikeSharp.API.dll
+        
+        # Move gamedata to the correct global folder
+        if [ -f publish/addons/counterstrikesharp/plugins/WeaponPaints/gamedata/weaponpaints.json ]; then
+          mv publish/addons/counterstrikesharp/plugins/WeaponPaints/gamedata/weaponpaints.json publish/addons/counterstrikesharp/gamedata/
+          rm -rf publish/addons/counterstrikesharp/plugins/WeaponPaints/gamedata
+        fi
+        
+    - name: Zip Plugin
+      run: |
+        cd publish
+        zip -r ../WeaponPaints.zip addons/
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: WeaponPaints-Package
+        path: WeaponPaints.zip
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: WeaponPaints.zip
+        generate_release_notes: true
