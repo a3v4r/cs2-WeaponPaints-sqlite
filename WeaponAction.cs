@@ -420,6 +420,9 @@ namespace WeaponPaints
 					
 					item.Initialized = true;
 
+					Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_EconGloves");
+					pawn.NeedToReApplyGloves = true; 
+
 					// Refresh model to show gloves
 					var model = pawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
 					if (!string.IsNullOrEmpty(model))
