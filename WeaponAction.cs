@@ -378,27 +378,69 @@ namespace WeaponPaints
 
 		private void GivePlayerGloves(CCSPlayerController player)
 		{
-			if (!Utility.IsPlayerValid(player) || (LifeState_t)player.LifeState != LifeState_t.LIFE_ALIVE) return;
+			Console.WriteLine($"[WeaponPaints DEBUG] === GivePlayerGloves Called for Slot {player.Slot} ===");
+
+			if (!Utility.IsPlayerValid(player))
+			{
+				Console.WriteLine($"[WeaponPaints DEBUG] Return 1: Player {player.Slot} is not valid.");
+				return;
+			}
+			
+			if ((LifeState_t)player.LifeState != LifeState_t.LIFE_ALIVE)
+			{
+				Console.WriteLine($"[WeaponPaints DEBUG] Return 2: Player {player.Slot} is NOT ALIVE. Current LifeState: {player.LifeState}");
+				return;
+			}
 
 			CCSPlayerPawn? pawn = player.PlayerPawn.Value;
 			if (pawn == null || !pawn.IsValid)
+			{
+				Console.WriteLine($"[WeaponPaints DEBUG] Return 3: PlayerPawn is null or invalid for Slot {player.Slot}");
 				return;
+			}
+
+			Console.WriteLine($"[WeaponPaints DEBUG] Player {player.Slot} valid and alive. Queuing NextFrame...");
 
 			Server.NextFrame(() =>
 			{	
 				try
 				{
+					Console.WriteLine($"[WeaponPaints DEBUG] --- NextFrame Executing for Slot {player.Slot} ---");
+					
 					if (!player.IsValid || !player.PawnIsAlive || player.PlayerPawn.Value == null)
+					{
+						Console.WriteLine($"[WeaponPaints DEBUG] NextFrame Return 1: Player became invalid or died before frame executed.");
 						return;
+					}
 
 					var currentPawn = player.PlayerPawn.Value;
 					CEconItemView item = currentPawn.EconGloves;
 
-					if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
-					    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
-					    gloveId == 0 ||
-					    !HasChangedPaint(player, gloveId, out var weaponInfo) || weaponInfo == null)
+					if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo))
+					{
+						Console.WriteLine($"[WeaponPaints DEBUG] NextFrame Return 2: No entry in GPlayersGlove for Slot {player.Slot}");
 						return;
+					}
+
+					if (!gloveInfo.TryGetValue(player.Team, out var gloveId))
+					{
+						Console.WriteLine($"[WeaponPaints DEBUG] NextFrame Return 3: No glove selected for Team {player.Team} (Slot {player.Slot})");
+						return;
+					}
+
+					if (gloveId == 0)
+					{
+						Console.WriteLine($"[WeaponPaints DEBUG] NextFrame Return 4: gloveId is 0 for Slot {player.Slot}");
+						return;
+					}
+
+					if (!HasChangedPaint(player, gloveId, out var weaponInfo) || weaponInfo == null)
+					{
+						Console.WriteLine($"[WeaponPaints DEBUG] NextFrame Return 5: HasChangedPaint returned false or weaponInfo is null for gloveId {gloveId}");
+						return;
+					}
+
+					Console.WriteLine($"[WeaponPaints DEBUG] Applying Glove ID: {gloveId}, Paint: {weaponInfo.Paint}, Wear: {weaponInfo.Wear}");
 
 					item.ItemDefinitionIndex = gloveId;
 					item.Initialized = true;
@@ -422,6 +464,8 @@ namespace WeaponPaints
 					
 					Utilities.SetStateChanged(currentPawn, "CCSPlayerPawn", "m_EconGloves");
 
+					Console.WriteLine($"[WeaponPaints DEBUG] Jiggling player model to force update...");
+
 					var model = currentPawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
 					if (!string.IsNullOrEmpty(model))
 					{
@@ -431,9 +475,12 @@ namespace WeaponPaints
 					
 					SetBodygroup(currentPawn, "default_gloves", 1);
 					SetBodygroup(currentPawn, "gloves", 1);
+					
+					Console.WriteLine($"[WeaponPaints DEBUG] === Glove Update Completed for Slot {player.Slot} ===");
 				}
 				catch (Exception ex) 
 				{
+					Console.WriteLine($"[WeaponPaints DEBUG ERROR] Exception in GivePlayerGloves: {ex.Message}\n{ex.StackTrace}");
 					Utility.Log($"Error in GivePlayerGloves: {ex.Message}");
 				}
 			});
