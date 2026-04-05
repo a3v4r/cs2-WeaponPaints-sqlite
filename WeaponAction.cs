@@ -224,7 +224,6 @@ namespace WeaponPaints
 
 			if (PlayerHasKnife(player)) return;
 
-			//string knifeToGive = (CsTeam)player.TeamNum == CsTeam.Terrorist ? "weapon_knife_t" : "weapon_knife";
 			player.GiveNamedItem(CsItem.Knife);
 			Utilities.SetStateChanged(player, "CCSPlayerController", "m_pInventoryServices");
 		}
@@ -421,7 +420,7 @@ namespace WeaponPaints
 					item.Initialized = true;
 
 					Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_EconGloves");
-					pawn.NeedToReApplyGloves = true; 
+					Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_bNeedToReApplyGloves");
 
 					// Refresh model to show gloves
 					var model = pawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
