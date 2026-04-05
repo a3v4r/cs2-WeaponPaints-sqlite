@@ -384,14 +384,15 @@ namespace WeaponPaints
 			if (pawn == null || !pawn.IsValid)
 				return;
 
-			CEconItemView item = pawn.EconGloves;
-
-			Instance.AddTimer(0.05f, () =>
+			Server.NextFrame(() =>
 			{	
 				try
 				{
-					if (!player.IsValid || !player.PawnIsAlive)
+					if (!player.IsValid || !player.PawnIsAlive || player.PlayerPawn.Value == null)
 						return;
+
+					var currentPawn = player.PlayerPawn.Value;
+					CEconItemView item = currentPawn.EconGloves;
 
 					if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
 					    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
@@ -400,12 +401,14 @@ namespace WeaponPaints
 						return;
 
 					item.ItemDefinitionIndex = gloveId;
-					
-					// Update player econ item id with a specific offset for gloves
-					var itemId = _nextItemId++;
+					item.Initialized = true;
+
+					var itemId = (ulong)(DateTime.Now.Ticks & 0x7FFFFFFF) + _nextItemId++;
 					item.ItemID = itemId;
-					item.ItemIDLow = (uint)itemId & 0xFFFFFFFF;
-					item.ItemIDHigh = (uint)itemId >> 32;
+					item.ItemIDLow = (uint)(itemId & 0xFFFFFFFF);
+					item.ItemIDHigh = (uint)(itemId >> 32);
+
+					item.CustomName = " "; 
 
 					item.NetworkedDynamicAttributes.Attributes.RemoveAll();
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.NetworkedDynamicAttributes.Handle, "set item texture prefab", weaponInfo.Paint);
@@ -417,27 +420,23 @@ namespace WeaponPaints
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture seed", weaponInfo.Seed);
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture wear", weaponInfo.Wear);
 					
-					item.Initialized = true;
+					Utilities.SetStateChanged(currentPawn, "CCSPlayerPawn", "m_EconGloves");
 
-					Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_EconGloves");
-					Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_bNeedToReApplyGloves");
-
-					// Refresh model to show gloves
-					var model = pawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
+					var model = currentPawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
 					if (!string.IsNullOrEmpty(model))
 					{
-						pawn.SetModel("characters/models/tm_jumpsuit/tm_jumpsuit_varianta.vmdl");
-						pawn.SetModel(model);
+						currentPawn.SetModel("characters/models/tm_jumpsuit/tm_jumpsuit_varianta.vmdl");
+						currentPawn.SetModel(model);
 					}
 					
-					SetBodygroup(pawn, "default_gloves", 1);
-					SetBodygroup(pawn, "gloves", 1);
+					SetBodygroup(currentPawn, "default_gloves", 1);
+					SetBodygroup(currentPawn, "gloves", 1);
 				}
 				catch (Exception ex) 
 				{
 					Utility.Log($"Error in GivePlayerGloves: {ex.Message}");
 				}
-			}, TimerFlags.STOP_ON_MAPCHANGE);
+			});
 		}
 
 		private static int GetRandomPaint(int defindex)
