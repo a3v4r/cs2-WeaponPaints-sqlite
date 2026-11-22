@@ -130,6 +130,7 @@ namespace WeaponPaints
 				WeaponSync = new WeaponSynchronization(Database, Config);
 
 			_fadeSeed = 0;
+			_skinErrorReported = false;
 			_nextItemId = MinimumCustomItemId;
 			_screenMenus.Clear();
 		}
@@ -217,9 +218,21 @@ namespace WeaponPaints
 					GivePlayerWeaponSkin(player, weapon);
 				}
 			}
-			catch { }
+			catch (Exception ex) { ReportSkinError(ex); }
 
 			return HookResult.Continue;
+		}
+
+		// Skins fail without a word when CS2 moves a function the plugin calls (gamedata/weaponpaints.json
+		// is then out of date). Say it once per map, so it shows up in the logs.
+		private bool _skinErrorReported;
+		private void ReportSkinError(Exception ex)
+		{
+			var cause = ex is System.Reflection.TargetInvocationException { InnerException: { } inner } ? inner : ex;
+			// Only failed native calls: a weapon lying on the map without an owner also lands in these catches
+			if (_skinErrorReported || cause is not NativeException) return;
+			_skinErrorReported = true;
+			Logger.LogError("Skins are not applied: {Error}. If CS2 was updated, gamedata/weaponpaints.json may be out of date.", cause.Message);
 		}
 
 		private void OnEntityCreated(CEntityInstance entity)
@@ -260,8 +273,9 @@ namespace WeaponPaints
 						
 						GivePlayerWeaponSkin(player, weapon);
 					}
-					catch (Exception)
+					catch (Exception ex)
 					{
+						ReportSkinError(ex);
 					}
 				});
 			}

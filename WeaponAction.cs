@@ -384,15 +384,44 @@ namespace WeaponPaints
 			if (pawn == null || !pawn.IsValid)
 				return;
 
-			Server.NextFrame(() =>
-			{	
+			CEconItemView item = pawn.EconGloves;
+
+			var hasPluginGlove = GPlayersGlove.TryGetValue(player.Slot, out var selectedGloves) &&
+			                     selectedGloves.TryGetValue(player.Team, out var selectedGloveId) &&
+			                     selectedGloveId != 0;
+
+			if (!hasPluginGlove)
+			{
+				// "Gloves | Default" (or no glove chosen). Leave inventory gloves alone, but drop a glove
+				// the plugin applied earlier: the pawn keeps it across respawns.
+				if (IsPluginGlove(item.ItemDefinitionIndex, item.AccountID))
+				{
+					item.NetworkedDynamicAttributes.Attributes.RemoveAll();
+					item.AttributeList.Attributes.RemoveAll();
+					item.ItemDefinitionIndex = 0;
+					item.ItemID = 0;
+					item.ItemIDLow = 0;
+					item.ItemIDHigh = 0;
+					item.Initialized = false;
+					MarkGlovesChanged(pawn);
+				}
+
+				if (item.ItemDefinitionIndex == 0)
+					ShowAgentDefaultHands(pawn);
+				return;
+			}
+
+			item.NetworkedDynamicAttributes.Attributes.RemoveAll();
+			item.AttributeList.Attributes.RemoveAll();
+
+			// Switching weapons forces the gloves model to refresh, otherwise the old one overlaps
+			player.ExecuteClientCommand("lastinv");
+			AddTimer(0.08f, () =>
+			{
 				try
 				{
-					if (!player.IsValid || !player.PawnIsAlive || player.PlayerPawn.Value == null)
+					if (!player.IsValid || !player.PawnIsAlive || !pawn.IsValid)
 						return;
-
-					var currentPawn = player.PlayerPawn.Value;
-					CEconItemView item = currentPawn.EconGloves;
 
 					if (!GPlayersGlove.TryGetValue(player.Slot, out var gloveInfo) ||
 					    !gloveInfo.TryGetValue(player.Team, out var gloveId) ||
@@ -401,14 +430,7 @@ namespace WeaponPaints
 						return;
 
 					item.ItemDefinitionIndex = gloveId;
-					item.Initialized = true;
-
-					var itemId = (ulong)(DateTime.Now.Ticks & 0x7FFFFFFF) + _nextItemId++;
-					item.ItemID = itemId;
-					item.ItemIDLow = (uint)(itemId & 0xFFFFFFFF);
-					item.ItemIDHigh = (uint)(itemId >> 32);
-
-					item.CustomName = " "; 
+					UpdatePlayerEconItemId(item);
 
 					item.NetworkedDynamicAttributes.Attributes.RemoveAll();
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.NetworkedDynamicAttributes.Handle, "set item texture prefab", weaponInfo.Paint);
@@ -419,32 +441,59 @@ namespace WeaponPaints
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture prefab", weaponInfo.Paint);
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture seed", weaponInfo.Seed);
 					CAttributeListSetOrAddAttributeValueByName.Invoke(item.AttributeList.Handle, "set item texture wear", weaponInfo.Wear);
-					
-					Utilities.SetStateChanged(currentPawn, "CCSPlayerPawn", "m_EconGloves");
 
-					var model = currentPawn.CBodyComponent?.SceneNode?.GetSkeletonInstance()?.ModelState.ModelName ?? string.Empty;
-					if (!string.IsNullOrEmpty(model))
+					item.Initialized = true;
+					MarkGlovesChanged(pawn);
+
+					player.ExecuteClientCommand("lastinv");
+
+					// Agent models hide their built-in hands through the "first_or_third_person" bodygroup
+					// (1 = thirdperson_hide_default_gloves), otherwise the econ glove never shows.
+					// Going through 0 first forces the change to be sent.
+					SetBodygroup(pawn, GloveBodygroup, 0);
+					AddTimer(0.2f, () =>
 					{
-						// Меняем модель в текущем пакете, чтобы сбросить стейт перчаток для клиента
-						currentPawn.SetModel("characters/models/tm_jumpsuit/tm_jumpsuit_varianta.vmdl");
-						
-						// Возвращаем модель с небольшой задержкой (в другом сетевом пакете)
-						AddTimer(0.05f, () => 
-						{
-							if (currentPawn != null && currentPawn.IsValid)
-							{
-								currentPawn.SetModel(model);
-								SetBodygroup(currentPawn, "default_gloves", 1);
-								SetBodygroup(currentPawn, "gloves", 1);
-							}
-						});
-					}
+						if (pawn.IsValid) SetBodygroup(pawn, GloveBodygroup, 1);
+					}, TimerFlags.STOP_ON_MAPCHANGE);
 				}
-				catch (Exception ex) 
+				catch (Exception ex)
 				{
 					Utility.Log($"Error in GivePlayerGloves: {ex.Message}");
 				}
-			});
+			}, TimerFlags.STOP_ON_MAPCHANGE);
+		}
+
+		// m_EconGloves is a struct, so SetStateChanged on it does not resolve. The client rebuilds
+		// the gloves when this counter changes.
+		private static void MarkGlovesChanged(CCSPlayerPawn pawn)
+		{
+			unchecked
+			{
+				pawn.EconGlovesChanged++;
+			}
+			Utilities.SetStateChanged(pawn, "CCSPlayerPawn", "m_nEconGlovesChanged");
+		}
+
+		// Inventory gloves carry the owner's AccountID; gloves the plugin writes never set it.
+		private static bool IsPluginGlove(ushort itemDefinitionIndex, uint accountId) =>
+			itemDefinitionIndex != 0 && accountId == 0;
+
+		private const string GloveBodygroup = "first_or_third_person";
+
+		// The built-in hands stay hidden after a plugin glove is removed, so show them again.
+		private void ShowAgentDefaultHands(CCSPlayerPawn pawn)
+		{
+			ApplyDefaultHands(pawn);
+			// A model refresh right after the glove change can re-publish the old state; apply once more.
+			AddTimer(0.3f, () => ApplyDefaultHands(pawn), TimerFlags.STOP_ON_MAPCHANGE);
+		}
+
+		private static void ApplyDefaultHands(CCSPlayerPawn pawn)
+		{
+			if (!pawn.IsValid || pawn.EconGloves.ItemDefinitionIndex != 0)
+				return;
+
+			SetBodygroup(pawn, GloveBodygroup, 0);
 		}
 
 		private static int GetRandomPaint(int defindex)
