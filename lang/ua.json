@@ -30,5 +30,6 @@
 	"wp_menu_scroll": "scroll",
 	"wp_menu_select": "select",
 	"wp_menu_exit": "exit",
-	"wp_site_link": "Skins website: {lime}{0}{default}. Open it in a browser on this computer to go straight to your profile."
+	"wp_site_link": "Skins website: {lime}{0}{default}. Open it in a browser on this computer to go straight to your profile.",
+	"wp_site_off": "Сайт скінів зараз не працює. Скіни можна вибрати в грі: {lime}!ws{default}, {lime}!knife{default}, {lime}!gloves{default}."
 }

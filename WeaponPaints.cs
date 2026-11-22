@@ -20,7 +20,7 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
     public override string ModuleAuthor => "Nereziel & daffyy";
 	public override string ModuleDescription => "Skin, gloves, agents and knife selector, standalone and web-based";
 	public override string ModuleName => "WeaponPaints";
-	public override string ModuleVersion => "3.3.2-patched";
+	public override string ModuleVersion => "3.3.3-patched";
 
 	public override void Load(bool hotReload)
 	{
@@ -127,6 +127,10 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
 		Utility.Config = config;
 		Utility.ShowAd(ModuleVersion);
 		Task.Run(async () => await Utility.CheckVersion(ModuleVersion, Logger));
+
+		// With Valve's server guidelines on, CounterStrikeSharp blocks the item changes and skins silently do nothing
+		if (CoreConfig.FollowCS2ServerGuidelines)
+			Logger.LogWarning("Skins will not be applied: set \"FollowCS2ServerGuidelines\": false in addons/counterstrikesharp/configs/core.json and restart the server.");
 	}
 
 	public override void OnAllPluginsLoaded(bool hotReload)

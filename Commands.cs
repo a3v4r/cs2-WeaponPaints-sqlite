@@ -96,9 +96,10 @@ public partial class WeaponPaints
 			return;
 		}
 
-		if (!string.IsNullOrEmpty(Localizer["wp_info_website"]))
+		var website = ShownSiteAddress();
+		if (website != null && !string.IsNullOrEmpty(Localizer["wp_info_website"]))
 		{
-			player!.Print(Localizer["wp_info_website", SiteAddress()]);
+			player!.Print(Localizer["wp_info_website", website]);
 		}
 		if (!string.IsNullOrEmpty(Localizer["wp_info_refresh"]))
 		{

@@ -233,47 +233,36 @@ namespace WeaponPaints
 			if (menu is ScreenMenu screen) screen.Current = current;
 		}
 
+		// Compared with the latest release of this fork, not with the original plugin (its versions differ)
+		private const string ReleasesUrl = "https://github.com/a3v4r/cs2-WeaponPaints-sqlite/releases";
+
 		internal static async Task CheckVersion(string version, ILogger logger)
 		{
-			using HttpClient client = new();
-
 			try
 			{
-				var response = await client.GetAsync("https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/VERSION").ConfigureAwait(false);
+				using HttpClient client = new() { Timeout = TimeSpan.FromSeconds(10) };
+				client.DefaultRequestHeaders.UserAgent.ParseAdd("WeaponPaints-version-check");
+				var json = await client.GetStringAsync("https://api.github.com/repos/a3v4r/cs2-WeaponPaints-sqlite/releases/latest").ConfigureAwait(false);
+				var latest = JObject.Parse(json)["tag_name"]?.ToString() ?? "";
 
-				if (response.IsSuccessStatusCode)
-				{
-					var remoteVersion = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-					remoteVersion = remoteVersion.Trim();
-
-					var comparisonResult = string.CompareOrdinal(version, remoteVersion);
-
-					switch (comparisonResult)
-					{
-						case < 0:
-							logger.LogWarning("Plugin is outdated! Check https://github.com/Nereziel/cs2-WeaponPaints");
-							break;
-						case > 0:
-							logger.LogInformation("Probably dev version detected");
-							break;
-						default:
-							logger.LogInformation("Plugin is up to date");
-							break;
-					}
-				}
+				if (ParseVersion(latest) is not { } remote || ParseVersion(version) is not { } local)
+					return;
+				if (remote > local)
+					logger.LogWarning("A newer version {Latest} is available: {Url}", latest, ReleasesUrl);
 				else
-				{
-					logger.LogWarning("Failed to check version");
-				}
+					logger.LogInformation("Plugin is up to date");
 			}
-			catch (HttpRequestException ex)
+			catch (Exception)
 			{
-				logger.LogError(ex, "Failed to connect to the version server.");
+				// No internet (a LAN-only server) is normal: nothing to report
 			}
-			catch (Exception ex)
-			{
-				logger.LogError(ex, "An error occurred while checking version.");
-			}
+		}
+
+		// "3.3.2-patched" -> 3.3.2
+		private static Version? ParseVersion(string text)
+		{
+			var m = System.Text.RegularExpressions.Regex.Match(text, @"\d+(\.\d+){1,3}");
+			return m.Success && Version.TryParse(m.Value, out var v) ? v : null;
 		}
 
 		internal static void ShowAd(string moduleVersion)
@@ -287,7 +276,7 @@ namespace WeaponPaints
 			Console.WriteLine("|   _   ||   |___ |   _   ||   |    |       || | |   ||   |    |   _   ||   | | | |   |  |   |   _____| |");
 			Console.WriteLine("|__| |__||_______||__| |__||___|    |_______||_|  |__||___|    |__| |__||___| |_|  |__|  |___|  |_______|");
 			Console.WriteLine("						>> Version: " + moduleVersion);
-			Console.WriteLine("			>> GitHub: https://github.com/Nereziel/cs2-WeaponPaints");
+			Console.WriteLine("			>> GitHub: https://github.com/a3v4r/cs2-WeaponPaints-sqlite (fork of Nereziel/cs2-WeaponPaints)");
 			Console.WriteLine(" ");
 		}
 	}

@@ -112,12 +112,23 @@ public partial class WeaponPaints
 		return generated ? LanIp() ?? $"{name}/" : $"{name}/";
 	}
 
+	// Address to show players, or null. With "auto" the site is ours (Matchdesk skins-site): shown only while
+	// it answers, so a server without it does not send players to a dead address. Any other value is shown as is.
+	private string? ShownSiteAddress()
+	{
+		if (string.IsNullOrWhiteSpace(Config.Website)) return null;
+		if (!string.Equals(Config.Website, "auto", StringComparison.OrdinalIgnoreCase)) return Config.Website;
+		if (DateTime.UtcNow - _menuImageCheckedAt > TimeSpan.FromSeconds(60)) CheckSiteImages();
+		return _menuImageBase != null ? SiteAddress() : null;
+	}
+
 	[ConsoleCommand("css_site", "Address of the skins website")]
 	[CommandHelper(whoCanExecute: CommandUsage.CLIENT_ONLY)]
 	public void OnCommandSite(CCSPlayerController? player, CommandInfo info)
 	{
 		if (player is not { IsValid: true, IsBot: false }) return;
-		player.Print(Localizer["wp_site_link", SiteAddress()]);
+		var address = ShownSiteAddress();
+		player.Print(address != null ? Localizer["wp_site_link", address] : Localizer["wp_site_off"]);
 	}
 
 	// Site login: the one player who plays from this IP ("local": from this machine)
