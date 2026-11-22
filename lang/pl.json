@@ -1,5 +1,5 @@
 {
-	"wp_prefix": "{lightblue}[WeaponPaints] {default}",
+	"wp_prefix": "[{lightblue}Server{default}] ",
 	"wp_info_website": "Odwiedź {lime}{0}{default}, gdzie możesz zmieniać skórki",
 	"wp_info_refresh": "Wpisz {lime}!wp{default}, aby zsynchronizować wybrane skórki",
 	"wp_info_knife": "Wpisz {lime}!knife{default}, aby otworzyć menu noży",
@@ -29,5 +29,6 @@
 	"wp_menu_alive": "The menu opens only while you are alive",
 	"wp_menu_scroll": "scroll",
 	"wp_menu_select": "select",
-	"wp_menu_exit": "exit"
+	"wp_menu_exit": "exit",
+	"wp_site_link": "Skins website: {lime}{0}{default}. Open it in a browser on this computer to go straight to your profile."
 }

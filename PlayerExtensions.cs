@@ -1,4 +1,5 @@
 ﻿using CounterStrikeSharp.API.Core;
+using CounterStrikeSharp.API.Core.Translations;
 using System.Text;
 
 namespace WeaponPaints;
@@ -9,7 +10,11 @@ public static class PlayerExtensions
 	{
 		if (WeaponPaints._localizer == null) return;
 
-		StringBuilder _message = new(WeaponPaints._localizer["wp_prefix"]);
+		// "ChatPrefix" from the config (the Matchdesk panel sets it), else the one from lang
+		var prefix = WeaponPaints.Instance.Config.ChatPrefix;
+		StringBuilder _message = new(string.IsNullOrWhiteSpace(prefix)
+			? WeaponPaints._localizer["wp_prefix"]
+			: prefix.TrimEnd().ReplaceColorTags() + " ");
 		_message.Append(message);
 		controller.PrintToChat(_message.ToString());
 	}

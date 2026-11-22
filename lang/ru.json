@@ -1,5 +1,5 @@
 {
-	"wp_prefix": "{lightblue}[WeaponPaints] {default}",
+	"wp_prefix": "[{lightblue}Server{default}] ",
 	"wp_info_website": "Посетите {lime}{0}{default}, где вы можете изменить скины",
 	"wp_info_refresh": "Введите {lime}!wp{default}, чтобы синхронизировать выбранные скины",
 	"wp_info_knife": "Введите {lime}!knife{default}, чтобы открыть меню ножей",
@@ -29,5 +29,6 @@
 	"wp_menu_alive": "Меню открывается, только пока вы живы",
 	"wp_menu_scroll": "листать",
 	"wp_menu_select": "выбрать",
-	"wp_menu_exit": "выход"
+	"wp_menu_exit": "выход",
+	"wp_site_link": "Сайт скинов: {lime}{0}{default}. Откройте его в браузере на этом компьютере, и сразу попадёте в свой профиль."
 }

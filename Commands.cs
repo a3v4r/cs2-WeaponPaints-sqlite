@@ -98,7 +98,7 @@ public partial class WeaponPaints
 
 		if (!string.IsNullOrEmpty(Localizer["wp_info_website"]))
 		{
-			player!.Print(Localizer["wp_info_website", Config.Website]);
+			player!.Print(Localizer["wp_info_website", SiteAddress()]);
 		}
 		if (!string.IsNullOrEmpty(Localizer["wp_info_refresh"]))
 		{

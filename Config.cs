@@ -100,8 +100,12 @@ namespace WeaponPaints
 		[JsonPropertyName("CmdRefreshCooldownSeconds")]
 		public int CmdRefreshCooldownSeconds { get; set; } = 3;
 
+		// Chat prefix of the plugin's messages, colour tags allowed; empty: the one from lang (wp_prefix)
+		[JsonPropertyName("ChatPrefix")]
+		public string ChatPrefix { get; set; } = "[{lightblue}Server{default}]";
+
 		[JsonPropertyName("Website")]
-		public string Website { get; set; } = "example.com/skins";
+		public string Website { get; set; } = "auto";
 
 		[JsonPropertyName("Additional")]
 		public Additional Additional { get; set; } = new();

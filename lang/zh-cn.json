@@ -1,5 +1,5 @@
 {
-	"wp_prefix": "{lightblue}[WeaponPaints] {default}",
+	"wp_prefix": "[{lightblue}Server{default}] ",
 	"wp_info_website": "访问 {lime}{0}{default}，您可以更改皮肤",
 	"wp_info_refresh": "输入 {lime}!wp{default} 同步选择的皮肤",
 	"wp_info_knife": "输入 {lime}!knife{default} 打开刀具菜单",
@@ -29,5 +29,6 @@
 	"wp_menu_alive": "The menu opens only while you are alive",
 	"wp_menu_scroll": "scroll",
 	"wp_menu_select": "select",
-	"wp_menu_exit": "exit"
+	"wp_menu_exit": "exit",
+	"wp_site_link": "Skins website: {lime}{0}{default}. Open it in a browser on this computer to go straight to your profile."
 }
