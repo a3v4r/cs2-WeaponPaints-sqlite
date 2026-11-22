@@ -23,8 +23,11 @@
 	"wp_skin_menu_weapon_title": "Меню Оружия",
 	"wp_skin_menu_skin_title": "Выберите скин для {lime}{0}{default}",
 	"wp_skin_menu_select": "Вы выбрали {lime}{0}{default} в качестве вашего скина",
-
 	"wp_stattrak_action": "Вы успешно изменили настройки статтрак",
-	
-	"None": "Нет"
+	"None": "Нет",
+	"wp_menu_hint": "Меню: {lime}A/D{default} листать, {lime}E{default} выбрать, {lime}R{default} выход",
+	"wp_menu_alive": "Меню открывается, только пока вы живы",
+	"wp_menu_scroll": "листать",
+	"wp_menu_select": "выбрать",
+	"wp_menu_exit": "выход"
 }

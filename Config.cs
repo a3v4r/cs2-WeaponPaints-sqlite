@@ -107,6 +107,6 @@ namespace WeaponPaints
 		public Additional Additional { get; set; } = new();
 		
 		[JsonPropertyName("MenuType")]
-		public string MenuType { get; set; } = "selectable";
+		public string MenuType { get; set; } = "screen";
 	}
 }

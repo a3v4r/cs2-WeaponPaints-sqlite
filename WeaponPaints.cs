@@ -133,8 +133,10 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
 	{
 		try
 		{
-			MenuApi = MenuCapability.Get();
-			
+			// MenuManager is optional: without it the built-in screen menu is used
+			try { MenuApi = MenuCapability.Get(); }
+			catch (KeyNotFoundException) { MenuApi = null; }
+
 			if (Config.Additional.KnifeEnabled)
 				SetupKnifeMenu();
 			if (Config.Additional.SkinEnabled)

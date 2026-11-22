@@ -116,6 +116,7 @@ namespace WeaponPaints
 			
 			_temporaryPlayerWeaponWear.TryRemove(player.Slot, out _);
 			CommandsCooldown.Remove(player.Slot);
+			_screenMenus.Remove(player.Slot);
 			Players.Remove(player);
 
 			return HookResult.Continue;
@@ -130,6 +131,7 @@ namespace WeaponPaints
 
 			_fadeSeed = 0;
 			_nextItemId = MinimumCustomItemId;
+			_screenMenus.Clear();
 		}
 
 		private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
@@ -271,6 +273,7 @@ namespace WeaponPaints
 
 			foreach (var player in Players)
 			{
+				if (_screenMenus.ContainsKey(player.Slot)) continue;
 				if (_playerWeaponImage.TryGetValue(player.Slot, out var value) && !string.IsNullOrEmpty(value))
 				{
 					player.PrintToCenterHtml("<img src='{PATH}'</img>".Replace("{PATH}", value));
@@ -345,6 +348,7 @@ namespace WeaponPaints
 
 			if (Config.Additional.ShowSkinImage)
 				RegisterListener<Listeners.OnTick>(OnTick);
+			RegisterListener<Listeners.OnTick>(OnScreenMenuTick);
 
 			VirtualFunctions.GiveNamedItemFunc.Hook(OnGiveNamedItemPost, HookMode.Post);
 		}

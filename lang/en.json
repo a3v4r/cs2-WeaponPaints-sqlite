@@ -23,8 +23,11 @@
 	"wp_skin_menu_weapon_title": "Weapon Menu",
 	"wp_skin_menu_skin_title": "Select skin for {lime}{0}{default}",
 	"wp_skin_menu_select": "You have chosen {lime}{0}{default} as your skin",
-
 	"wp_stattrak_action": "You have successfully changed the stattrak setting",
-	
-	"None": "None"
+	"None": "None",
+	"wp_menu_hint": "Menu: {lime}A/D{default} scroll, {lime}E{default} select, {lime}R{default} exit",
+	"wp_menu_alive": "The menu opens only while you are alive",
+	"wp_menu_scroll": "scroll",
+	"wp_menu_select": "select",
+	"wp_menu_exit": "exit"
 }

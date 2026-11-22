@@ -23,8 +23,11 @@
 	"wp_skin_menu_weapon_title": "武器菜单",
 	"wp_skin_menu_skin_title": "选择 {lime}{0}{default} 的皮肤",
 	"wp_skin_menu_select": "您选择了 {lime}{0}{default} 作为您的皮肤",
-
 	"wp_stattrak_action": "您已成功更改 StatTrak 设置",
-	
-	"None": "无"
+	"None": "无",
+	"wp_menu_hint": "Menu: {lime}A/D{default} scroll, {lime}E{default} select, {lime}R{default} exit",
+	"wp_menu_alive": "The menu opens only while you are alive",
+	"wp_menu_scroll": "scroll",
+	"wp_menu_select": "select",
+	"wp_menu_exit": "exit"
 }

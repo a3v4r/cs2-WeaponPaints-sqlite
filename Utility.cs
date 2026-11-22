@@ -189,6 +189,8 @@ namespace WeaponPaints
 		{
 			var menuType = WeaponPaints.Instance.Config.MenuType.ToLower();
         
+			if (menuType == "screen") return new ScreenMenu(title);
+
 			var menu = menuType switch
 			{
 				_ when menuType.Equals("selectable", StringComparison.CurrentCultureIgnoreCase) =>
@@ -209,7 +211,26 @@ namespace WeaponPaints
 				_ => WeaponPaints.MenuApi?.NewMenu(title)
 			};
 
-			return menu;
+			// No MenuManager on the server: the built-in screen menu instead of no menu at all
+			return menu ?? new ScreenMenu(title);
+		}
+
+		// Adds an option; the screen menu shows it as `display` with its picture
+		internal static void AddOption(IMenu? menu, string text, Action<CCSPlayerController, ChatMenuOption> onSelect, string? display = null, string? image = null)
+		{
+			if (menu == null) return;
+			if (menu is ScreenMenu screen)
+			{
+				var option = screen.AddMenuOption(text, onSelect);
+				screen.Meta[option] = (display ?? text, image ?? "");
+			}
+			else menu.AddMenuOption(text, onSelect);
+		}
+
+		// The option the player has now (by its text): the screen menu opens on it
+		internal static void SetCurrent(IMenu? menu, Func<CCSPlayerController, string?> current)
+		{
+			if (menu is ScreenMenu screen) screen.Current = current;
 		}
 
 		internal static async Task CheckVersion(string version, ILogger logger)

@@ -23,8 +23,11 @@
 	"wp_skin_menu_weapon_title": "Menu de Armas",
 	"wp_skin_menu_skin_title": "Selecione a skin para {lime}{0}{default}",
 	"wp_skin_menu_select": "Escolheu {lime}{0}{default} como a sua skin",
-
 	"wp_stattrak_action": "Alterou com sucesso a configuração do stattrak",
-	
-	"None": "Nenhum"
+	"None": "Nenhum",
+	"wp_menu_hint": "Menu: {lime}A/D{default} scroll, {lime}E{default} select, {lime}R{default} exit",
+	"wp_menu_alive": "The menu opens only while you are alive",
+	"wp_menu_scroll": "scroll",
+	"wp_menu_select": "select",
+	"wp_menu_exit": "exit"
 }

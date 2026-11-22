@@ -11,6 +11,24 @@ namespace WeaponPaints;
 
 public partial class WeaponPaints
 {
+	// !ws opens these: the weapon list and the skins of one weapon (by its menu name)
+	private IMenu? _weaponSelectionMenu;
+	private Action<CCSPlayerController, string>? _openWeaponSkins;
+
+	// Team whose choice a menu shows: spectators pick for both, shown as T
+	private static CsTeam MenuTeam(CCSPlayerController player) => player.TeamNum < 2 ? CsTeam.Terrorist : player.Team;
+
+	// Picture of the weapon (or knife) without a skin
+	private static string? DefaultImage(string className) =>
+		SkinsList.FirstOrDefault(s => s["weapon_name"]?.ToString() == className && s["paint"]?.ToString() == "0")?["image"]?.ToString();
+
+	// "AK-47 | Redline" -> "Redline"
+	private static string SkinName(string paintName)
+	{
+		var bar = paintName.IndexOf('|');
+		return bar > 0 ? paintName[(bar + 1)..].Trim() : paintName.Trim();
+	}
+
 	private void OnCommandRefresh(CCSPlayerController? player, CommandInfo command)
 	{
 		if (!Config.Additional.CommandWpEnabled || !Config.Additional.SkinEnabled || !_gBCommandsAllowed) return;
@@ -64,6 +82,19 @@ public partial class WeaponPaints
 	{
 		if (!Config.Additional.SkinEnabled) return;
 		if (!Utility.IsPlayerValid(player)) return;
+
+		// Screen menu: skins of the weapon in hands, or the weapon list when it has none
+		if (_weaponSelectionMenu is ScreenMenu && _openWeaponSkins != null)
+		{
+			var weapon = player!.PlayerPawn.Value?.WeaponServices?.ActiveWeapon.Value;
+			if (weapon is { IsValid: true } &&
+			    WeaponDefindex.TryGetValue(weapon.AttributeManager.Item.ItemDefinitionIndex, out var className) &&
+			    WeaponList.TryGetValue(className, out var weaponName))
+				_openWeaponSkins(player, weaponName);
+			else
+				_weaponSelectionMenu.Open(player);
+			return;
+		}
 
 		if (!string.IsNullOrEmpty(Localizer["wp_info_website"]))
 		{
@@ -226,8 +257,11 @@ public partial class WeaponPaints
 		};
 		foreach (var knifePair in knivesOnly)
 		{
-			giveItemMenu?.AddMenuOption(knifePair.Value, handleGive);
+			Utility.AddOption(giveItemMenu, knifePair.Value, handleGive, image: DefaultImage(knifePair.Key));
 		}
+		Utility.SetCurrent(giveItemMenu, player =>
+			GPlayersKnife.TryGetValue(player.Slot, out var knives) && knives.TryGetValue(MenuTeam(player), out var knife) &&
+			knivesOnly.TryGetValue(knife, out var knifeName) ? knifeName : null);
 		_config.Additional.CommandKnife.ForEach(c =>
 		{
 			AddCommand($"css_{c}", "Knife Menu", (player, _) =>
@@ -371,21 +405,32 @@ public partial class WeaponPaints
 
 					if (!string.IsNullOrEmpty(paintName) && !string.IsNullOrEmpty(paint))
 					{
-						skinSubMenu?.AddMenuOption($"{paintName} ({paint})", handleSkinSelection);
+						Utility.AddOption(skinSubMenu, $"{paintName} ({paint})", handleSkinSelection,
+							display: SkinName(paintName), image: skin["image"]?.ToString());
 					}
 				}
+
+				var weaponDefIndex = (int?)skinsForSelectedWeapon.FirstOrDefault()?["weapon_defindex"] ?? 0;
+				Utility.SetCurrent(skinSubMenu, p =>
+				{
+					if (!GPlayerWeaponsInfo.TryGetValue(p.Slot, out var teams) ||
+					    !teams.TryGetValue(MenuTeam(p), out var weapons) ||
+					    !weapons.TryGetValue(weaponDefIndex, out var info)) return null;
+					var saved = skinsForSelectedWeapon.FirstOrDefault(s => s["paint"]?.ToString() == info.Paint.ToString());
+					return saved == null ? null : $"{saved["paint_name"]} ({saved["paint"]})";
+				});
 			}
 			if (player != null && Utility.IsPlayerValid(player))
 				skinSubMenu?.Open(player);
 		};
 
 		// Add weapon options to the weapon selection menu
-		foreach (var weaponName in WeaponList
-			         .Where(kvp => kvp.Key != "weapon_knife")
-			         .Select(kvp => kvp.Value))
+		foreach (var (className, weaponName) in WeaponList.Where(kvp => kvp.Key != "weapon_knife"))
 		{
-			weaponSelectionMenu?.AddMenuOption(weaponName, handleWeaponSelection);
+			Utility.AddOption(weaponSelectionMenu, weaponName, handleWeaponSelection, image: DefaultImage(className));
 		}
+		_weaponSelectionMenu = weaponSelectionMenu;
+		_openWeaponSkins = (player, weaponName) => handleWeaponSelection(player, new ChatMenuOption(weaponName, false, handleWeaponSelection));
 		// Command to open the weapon selection menu for players
 			
 		_config.Additional.CommandSkinSelection.ForEach(c =>
@@ -517,10 +562,21 @@ public partial class WeaponPaints
 		};
 
 		// Add weapon options to the weapon selection menu
-		foreach (var paintName in GlovesList.Select(gloveObject => gloveObject["paint_name"]?.ToString() ?? "").Where(paintName => paintName.Length > 0))
+		foreach (var glove in GlovesList)
 		{
-			glovesSelectionMenu.AddMenuOption(paintName, handleGloveSelection);
+			var paintName = glove["paint_name"]?.ToString() ?? "";
+			if (paintName.Length > 0)
+				Utility.AddOption(glovesSelectionMenu, paintName, handleGloveSelection, image: glove["image"]?.ToString());
 		}
+		Utility.SetCurrent(glovesSelectionMenu, player =>
+		{
+			var team = MenuTeam(player);
+			if (!GPlayersGlove.TryGetValue(player.Slot, out var gloves) || !gloves.TryGetValue(team, out var gloveDef) || gloveDef == 0)
+				return GlovesList.FirstOrDefault()?["paint_name"]?.ToString();
+			var paint = GPlayerWeaponsInfo.TryGetValue(player.Slot, out var teams) && teams.TryGetValue(team, out var weapons) &&
+			            weapons.TryGetValue(gloveDef, out var info) ? info.Paint : -1;
+			return GlovesList.FirstOrDefault(g => g["weapon_defindex"]?.ToString() == gloveDef.ToString() && g["paint"]?.ToString() == paint.ToString())?["paint_name"]?.ToString();
+		});
 
 		// Command to open the weapon selection menu for players
 		_config.Additional.CommandGlove.ForEach(c =>
@@ -645,8 +701,14 @@ public partial class WeaponPaints
 						var paintName = agentObject["agent_name"]?.ToString() ?? "";
 
 						if (paintName.Length > 0)
-							agentsSelectionMenu.AddMenuOption(paintName, handleAgentSelection);
+							Utility.AddOption(agentsSelectionMenu, paintName, handleAgentSelection, image: agentObject["image"]?.ToString());
 					}
+					Utility.SetCurrent(agentsSelectionMenu, p =>
+					{
+						var model = GPlayersAgent.TryGetValue(p.Slot, out var agents) ? (p.TeamNum == 3 ? agents.CT : agents.T) : null;
+						return AgentsList.FirstOrDefault(a => a["team"]?.ToString() == p.TeamNum.ToString() &&
+						                                      a["model"]?.ToString() == (model ?? "null"))?["agent_name"]?.ToString();
+					});
 
 					CommandsCooldown[player.Slot] = DateTime.UtcNow.AddSeconds(Config.CmdRefreshCooldownSeconds);
 					agentsSelectionMenu.Open(player);
@@ -766,10 +828,16 @@ public partial class WeaponPaints
 
 		musicSelectionMenu.AddMenuOption(Localizer["None"], handleMusicSelection);
 		// Add weapon options to the weapon selection menu
-		foreach (var paintName in MusicList.Select(musicObject => musicObject["name"]?.ToString() ?? "").Where(paintName => paintName.Length > 0))
+		foreach (var music in MusicList)
 		{
-			musicSelectionMenu.AddMenuOption(paintName, handleMusicSelection);
+			var paintName = music["name"]?.ToString() ?? "";
+			if (paintName.Length > 0)
+				Utility.AddOption(musicSelectionMenu, paintName, handleMusicSelection, image: music["image"]?.ToString());
 		}
+		Utility.SetCurrent(musicSelectionMenu, player =>
+			GPlayersMusic.TryGetValue(player.Slot, out var kits) && kits.TryGetValue(MenuTeam(player), out var id) && id != 0
+				? MusicList.FirstOrDefault(m => m["id"]?.ToString() == id.ToString())?["name"]?.ToString()
+				: Localizer["None"]);
 
 		// Command to open the weapon selection menu for players
 		_config.Additional.CommandMusic.ForEach(c =>
@@ -901,10 +969,16 @@ public partial class WeaponPaints
 
 		pinsSelectionMenu.AddMenuOption(Localizer["None"], handlePinsSelection);
 		// Add weapon options to the weapon selection menu
-		foreach (var paintName in PinsList.Select(musicObject => musicObject["name"]?.ToString() ?? "").Where(paintName => paintName.Length > 0))
+		foreach (var pin in PinsList)
 		{
-			pinsSelectionMenu.AddMenuOption(paintName, handlePinsSelection);
+			var paintName = pin["name"]?.ToString() ?? "";
+			if (paintName.Length > 0)
+				Utility.AddOption(pinsSelectionMenu, paintName, handlePinsSelection, image: pin["image"]?.ToString());
 		}
+		Utility.SetCurrent(pinsSelectionMenu, player =>
+			GPlayersPin.TryGetValue(player.Slot, out var pins) && pins.TryGetValue(MenuTeam(player), out var id) && id != 0
+				? PinsList.FirstOrDefault(m => m["id"]?.ToString() == id.ToString())?["name"]?.ToString()
+				: Localizer["None"]);
 
 		// Command to open the weapon selection menu for players
 		_config.Additional.CommandPin.ForEach(c =>
