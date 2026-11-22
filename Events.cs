@@ -133,6 +133,7 @@ namespace WeaponPaints
 			_skinErrorReported = false;
 			_nextItemId = MinimumCustomItemId;
 			_screenMenus.Clear();
+			CheckSiteImages();
 		}
 
 		private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)

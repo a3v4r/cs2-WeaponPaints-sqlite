@@ -128,7 +128,7 @@ public partial class WeaponPaints
 		sb.Append($"<font color='#ffcc33'>E</font>&nbsp;{Html(Localizer["wp_menu_select"])}&nbsp;&nbsp;");
 		sb.Append($"<font color='#ffcc33'>R</font>&nbsp;{Html(Localizer["wp_menu_exit"])}</font>");
 		if (Config.Additional.ShowSkinImage && !string.IsNullOrEmpty(image))
-			sb.Append($"<br><img src='{image}'>");
+			sb.Append($"<br><img src='{MenuImage(image)}'>");
 
 		player.PrintToCenterHtml(sb.ToString());
 	}

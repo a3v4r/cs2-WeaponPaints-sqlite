@@ -49,6 +49,59 @@ public partial class WeaponPaints
 			.Select(a => a.Address)
 			.FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork && IsPrivateLan(a))?.ToString();
 
+	// Menu pictures from the skins site (it keeps copies of the GitHub ones), so LAN players do not wait for GitHub.
+	// Used only while the site answers; otherwise the menu shows the GitHub addresses as before.
+	private const string UpstreamImages = "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/";
+	private static readonly HttpClient SiteHttp = new() { Timeout = TimeSpan.FromSeconds(3) };
+	private volatile string? _menuImageBase;
+	private DateTime _menuImageCheckedAt = DateTime.MinValue;
+
+	// "auto": the site runs on this machine on port 80, players reach it by the LAN IP
+	private string? SiteImageBase()
+	{
+		if (string.Equals(Config.Website, "auto", StringComparison.OrdinalIgnoreCase))
+			return $"http://{LanIp() ?? "127.0.0.1"}/img/";
+		var site = Config.Website.Trim();
+		if (site.Length == 0) return null;
+		if (!site.Contains("://")) site = "http://" + site;
+		return site.TrimEnd('/') + "/img/";
+	}
+
+	private void CheckSiteImages()
+	{
+		_menuImageCheckedAt = DateTime.UtcNow;
+		var imageBase = SiteImageBase();
+		if (imageBase == null)
+		{
+			_menuImageBase = null;
+			return;
+		}
+		_ = Task.Run(async () =>
+		{
+			try
+			{
+				using var res = await SiteHttp.GetAsync(imageBase + "ok");
+				_menuImageBase = res.IsSuccessStatusCode ? imageBase : null;
+			}
+			catch
+			{
+				_menuImageBase = null;
+			}
+		});
+	}
+
+	private string MenuImage(string image)
+	{
+		// Check again now and then: the site may be started or stopped while the map runs
+		var age = DateTime.UtcNow - _menuImageCheckedAt;
+		if (age > TimeSpan.FromSeconds(_menuImageBase == null ? 60 : 300)) CheckSiteImages();
+
+		var imageBase = _menuImageBase;
+		return imageBase != null && image.StartsWith(UpstreamImages, StringComparison.Ordinal)
+			? imageBase + image[UpstreamImages.Length..]
+			: image;
+	}
+
 	// "Website": "auto" -> this machine's name ("aevar-pc/"), or its LAN IP when the name is a
 	// generated one like DESKTOP-7H3K2LF. Any other value is shown as is (e.g. an IP where names don't resolve).
 	private string SiteAddress()
