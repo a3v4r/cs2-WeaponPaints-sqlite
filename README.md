@@ -1,5 +1,7 @@
 # WeaponPaints (SQLite fork)
 
+**English** | [Русский](README.ru.md)
+
 Skins, knives, gloves, agents, music kits and pins for CS2 servers on [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp).
 Fork of [Nereziel/cs2-WeaponPaints](https://github.com/Nereziel/cs2-WeaponPaints), made for LAN tournaments and servers without a web host or MySQL.
 
@@ -7,7 +9,7 @@ Fork of [Nereziel/cs2-WeaponPaints](https://github.com/Nereziel/cs2-WeaponPaints
 
 - **SQLite by default.** The database is one file next to the plugin (`weapon_paints.db`), created on the first start. MySQL still works (`"DatabaseType": "MySQL"`).
 - **Built-in menu.** `!ws`, `!knife`, `!gloves` and the rest open an on-screen menu with item pictures: A/D to scroll, E to pick, R to close. [MenuManager](https://github.com/NickFox007/MenuManagerCS2) is optional; with it, the other menu types still work (`MenuType`).
-- **Skins website without logins.** Works with the skins website of [Matchdesk](https://github.com/a3v4r/Matchdesk) (`skins-site/`): a player types `!site`, opens the address on the computer he plays from and lands in his profile. A change on the site applies in game at once.
+- **Skins website without logins.** Works with the skins website of [Matchdesk](https://github.com/a3v4r/Matchdesk) (`skins-site/`): a player types `!site`, opens the address on the computer they play from and lands in their profile. A change on the site applies in game at once.
 - **Neutral chat prefix** `[Server]`, set with `ChatPrefix`.
 - **Gamedata and gloves fixed** for the current CS2. When a skin cannot be applied (usually outdated gamedata after a CS2 update), the plugin writes it to the log instead of failing silently.
 
