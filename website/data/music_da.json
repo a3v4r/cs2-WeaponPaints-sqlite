@@ -473,5 +473,80 @@
         "id": "96",
         "name": "Musiksæt | Tigercub, The Perfume of Decay",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-96.png"
+    },
+    {
+        "id": "98",
+        "name": "Musiksæt | ALRT, DOPAMINE HIT",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-98.png"
+    },
+    {
+        "id": "99",
+        "name": "Musiksæt | Altare, Change My Mind",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-99.png"
+    },
+    {
+        "id": "100",
+        "name": "Musiksæt | borne, Give It To Me",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-100.png"
+    },
+    {
+        "id": "101",
+        "name": "Musiksæt | Pirapus, EVERYNITE",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-101.png"
+    },
+    {
+        "id": "102",
+        "name": "Musiksæt | Repiet & Julia Kleijn, On And On",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-102.png"
+    },
+    {
+        "id": "103",
+        "name": "Musiksæt | ShockOne, Voices",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-103.png"
+    },
+    {
+        "id": "104",
+        "name": "Musiksæt | Starjunk 95, Industrial Sunset Memories",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-104.png"
+    },
+    {
+        "id": "105",
+        "name": "Music Kit | ALLEYCVT & LEVEL UP, BELIEVE",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-105.png"
+    },
+    {
+        "id": "106",
+        "name": "Music Kit | Arcando & Pirapus, Ultrasound",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-106.png"
+    },
+    {
+        "id": "107",
+        "name": "Music Kit | DJ DIESEL & Hairitage, BANG YOUR HEAD",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-107.png"
+    },
+    {
+        "id": "108",
+        "name": "Music Kit | F.O.O.L, Criminals",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-108.png"
+    },
+    {
+        "id": "109",
+        "name": "Music Kit | Noisestorm, Crab Rave",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-109.png"
+    },
+    {
+        "id": "110",
+        "name": "Music Kit | Pegboard Nerds, Disconnected",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-110.png"
+    },
+    {
+        "id": "111",
+        "name": "Music Kit | Tristam & Braken, Flight",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-111.png"
+    },
+    {
+        "id": "112",
+        "name": "Music Kit | Vicetone & Cozi Zuehlsdorff, Nevada",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/music_kit-112.png"
     }
 ]

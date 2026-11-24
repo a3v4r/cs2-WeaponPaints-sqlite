@@ -10,9 +10,33 @@
     {
         "weapon_defindex": 7,
         "weapon_name": "weapon_ak47",
+        "paint": "1449",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1449.png",
+        "paint_name": "AK-47 | AUTOEXEC",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 7,
+        "weapon_name": "weapon_ak47",
+        "paint": "1425",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1425.png",
+        "paint_name": "AK-47 | Uçan Turna",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 7,
+        "weapon_name": "weapon_ak47",
         "paint": "1207",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1207.png",
         "paint_name": "AK-47 | Kavurucu Öfke",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 7,
+        "weapon_name": "weapon_ak47",
+        "paint": "1466",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1466.png",
+        "paint_name": "AK-47 | Cinin Alâmetleri",
         "legacy_model": false
     },
     {
@@ -348,7 +372,7 @@
         "weapon_name": "weapon_ak47",
         "paint": "1397",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1397.png",
-        "paint_name": "AK-47 | Aphrodite",
+        "paint_name": "AK-47 | Afrodit",
         "legacy_model": false
     },
     {
@@ -420,7 +444,7 @@
         "weapon_name": "weapon_ak47",
         "paint": "1358",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ak47-1358.png",
-        "paint_name": "AK-47 | Breakthrough",
+        "paint_name": "AK-47 | Atılım",
         "legacy_model": false
     },
     {
@@ -565,6 +589,22 @@
         "paint": "1198",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1198.png",
         "paint_name": "AUG | Çelik Nöbetçi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 8,
+        "weapon_name": "weapon_aug",
+        "paint": "1452",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1452.png",
+        "paint_name": "AUG | Sinyal Tarayıcı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 8,
+        "weapon_name": "weapon_aug",
+        "paint": "1464",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1464.png",
+        "paint_name": "AUG | Lacivert Taş",
         "legacy_model": false
     },
     {
@@ -796,7 +836,7 @@
         "weapon_name": "weapon_aug",
         "paint": "1362",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_aug-1362.png",
-        "paint_name": "AUG | Creep",
+        "paint_name": "AUG | Kâbus",
         "legacy_model": false
     },
     {
@@ -898,6 +938,14 @@
     {
         "weapon_defindex": 9,
         "weapon_name": "weapon_awp",
+        "paint": "1467",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1467.png",
+        "paint_name": "AWP | Kara Kutu",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
         "paint": "1346",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1346.png",
         "paint_name": "AWP | Buz Kaplamalı",
@@ -917,6 +965,22 @@
         "paint": "1206",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1206.png",
         "paint_name": "AWP | Printstream",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
+        "paint": "1422",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1422.png",
+        "paint_name": "AWP | Kraliçenin Fermanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 9,
+        "weapon_name": "weapon_awp",
+        "paint": "1465",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1465.png",
+        "paint_name": "AWP | Hükûmran Ateş",
         "legacy_model": false
     },
     {
@@ -1204,7 +1268,7 @@
         "weapon_name": "weapon_awp",
         "paint": "1378",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_awp-1378.png",
-        "paint_name": "AWP | Exothermic",
+        "paint_name": "AWP | Ekzotermik",
         "legacy_model": false
     },
     {
@@ -1333,7 +1397,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-413.png",
         "paint_name": "★ Bayonet | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1365,7 +1429,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-59.png",
         "paint_name": "★ Bayonet | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1373,7 +1437,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-409.png",
         "paint_name": "★ Bayonet | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1480.png",
+        "paint_name": "★ Bayonet | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1389,7 +1461,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-410.png",
         "paint_name": "★ Bayonet | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1481.png",
+        "paint_name": "★ Bayonet | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1398,6 +1478,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-43.png",
         "paint_name": "★ Bayonet | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1482.png",
+        "paint_name": "★ Bayonet | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1413,7 +1501,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-414.png",
         "paint_name": "★ Bayonet | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1442,10 +1530,26 @@
     {
         "weapon_defindex": 500,
         "weapon_name": "weapon_bayonet",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1478.png",
+        "paint_name": "★ Bayonet | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-5.png",
         "paint_name": "★ Bayonet | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1483.png",
+        "paint_name": "★ Bayonet | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1462,6 +1566,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-578.png",
         "paint_name": "★ Bayonet | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 500,
+        "weapon_name": "weapon_bayonet",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bayonet-1479.png",
+        "paint_name": "★ Bayonet | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 500,
@@ -1562,6 +1674,22 @@
     {
         "weapon_defindex": 26,
         "weapon_name": "weapon_bizon",
+        "paint": "1418",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1418.png",
+        "paint_name": "PP-Bizon | RMX",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 26,
+        "weapon_name": "weapon_bizon",
+        "paint": "1472",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1472.png",
+        "paint_name": "PP-Bizon | Hain",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 26,
+        "weapon_name": "weapon_bizon",
         "paint": "349",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-349.png",
         "paint_name": "PP-Bizon | Osiris",
@@ -1597,7 +1725,7 @@
         "paint": "542",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-542.png",
         "paint_name": "PP-Bizon | Anubis'in Adaleti",
-        "legacy_model": false
+        "legacy_model": true
     },
     {
         "weapon_defindex": 26,
@@ -1748,7 +1876,7 @@
         "weapon_name": "weapon_bizon",
         "paint": "1392",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_bizon-1392.png",
-        "paint_name": "PP-Bizon | Thermal Currents",
+        "paint_name": "PP-Bizon | Sıcak Esinti",
         "legacy_model": false
     },
     {
@@ -1978,6 +2106,14 @@
     {
         "weapon_defindex": 63,
         "weapon_name": "weapon_cz75a",
+        "paint": "1443",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-1443.png",
+        "paint_name": "CZ75-Otomatik | Hidrolik",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 63,
+        "weapon_name": "weapon_cz75a",
         "paint": "687",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-687.png",
         "paint_name": "CZ75-Otomatik | Tacticat",
@@ -2060,7 +2196,7 @@
         "weapon_name": "weapon_cz75a",
         "paint": "1390",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_cz75a-1390.png",
-        "paint_name": "CZ75-Otomatik | Honey Paisley",
+        "paint_name": "CZ75-Otomatik | Ballı Pateh",
         "legacy_model": false
     },
     {
@@ -2354,6 +2490,22 @@
     {
         "weapon_defindex": 1,
         "weapon_name": "weapon_deagle",
+        "paint": "1458",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1458.png",
+        "paint_name": "Desert Eagle | Doğu Muamması",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 1,
+        "weapon_name": "weapon_deagle",
+        "paint": "1430",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1430.png",
+        "paint_name": "Desert Eagle | Alev Soluk",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 1,
+        "weapon_name": "weapon_deagle",
         "paint": "1189",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1189.png",
         "paint_name": "Desert Eagle | Yılan Saldırısı",
@@ -2436,7 +2588,7 @@
         "weapon_name": "weapon_deagle",
         "paint": "1360",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_deagle-1360.png",
-        "paint_name": "Desert Eagle | The Daily Deagle",
+        "paint_name": "Desert Eagle | Daily Deagle",
         "legacy_model": false
     },
     {
@@ -2618,6 +2770,14 @@
     {
         "weapon_defindex": 2,
         "weapon_name": "weapon_elite",
+        "paint": "1459",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-1459.png",
+        "paint_name": "Çift Beretta | Mistik Bağlanma",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 2,
+        "weapon_name": "weapon_elite",
         "paint": "625",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-625.png",
         "paint_name": "Çift Beretta | Asil Yoldaşlar",
@@ -2772,7 +2932,7 @@
         "weapon_name": "weapon_elite",
         "paint": "1373",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_elite-1373.png",
-        "paint_name": "Çift Beretta | Silver Pour",
+        "paint_name": "Çift Beretta | Gümüş Döküm",
         "legacy_model": false
     },
     {
@@ -2954,6 +3114,22 @@
     {
         "weapon_defindex": 10,
         "weapon_name": "weapon_famas",
+        "paint": "1477",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1477.png",
+        "paint_name": "FAMAS | Şirket Savunması",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 10,
+        "weapon_name": "weapon_famas",
+        "paint": "1461",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1461.png",
+        "paint_name": "FAMAS | Yılan Şarkısı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 10,
+        "weapon_name": "weapon_famas",
         "paint": "1146",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1146.png",
         "paint_name": "FAMAS | Miyav 36",
@@ -3052,7 +3228,7 @@
         "weapon_name": "weapon_famas",
         "paint": "1393",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_famas-1393.png",
-        "paint_name": "FAMAS | Byproduct",
+        "paint_name": "FAMAS | Yan Ürün",
         "legacy_model": false
     },
     {
@@ -3322,9 +3498,25 @@
     {
         "weapon_defindex": 3,
         "weapon_name": "weapon_fiveseven",
+        "paint": "1457",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1457.png",
+        "paint_name": "Five-SeveN | Çöl Mührü",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 3,
+        "weapon_name": "weapon_fiveseven",
         "paint": "1168",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1168.png",
         "paint_name": "Five-SeveN | Hibrit",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 3,
+        "weapon_name": "weapon_fiveseven",
+        "paint": "1429",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1429.png",
+        "paint_name": "Five-SeveN | Koyu Polimer",
         "legacy_model": false
     },
     {
@@ -3452,7 +3644,7 @@
         "weapon_name": "weapon_fiveseven",
         "paint": "1380",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_fiveseven-1380.png",
-        "paint_name": "Five-SeveN | Fraise Crane",
+        "paint_name": "Five-SeveN | Pembe Turna",
         "legacy_model": false
     },
     {
@@ -3858,6 +4050,14 @@
     {
         "weapon_defindex": 13,
         "weapon_name": "weapon_galilar",
+        "paint": "1434",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-1434.png",
+        "paint_name": "Galil AR | Galigator",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 13,
+        "weapon_name": "weapon_galilar",
         "paint": "494",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-494.png",
         "paint_name": "Galil AR | Taş Soğuğu",
@@ -3964,7 +4164,7 @@
         "weapon_name": "weapon_galilar",
         "paint": "1383",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_galilar-1383.png",
-        "paint_name": "Galil AR | Sky Mandala",
+        "paint_name": "Galil AR | Gökyüzü Desenli Mandala",
         "legacy_model": false
     },
     {
@@ -4354,6 +4554,30 @@
     {
         "weapon_defindex": 4,
         "weapon_name": "weapon_glock",
+        "paint": "1450",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1450.png",
+        "paint_name": "Glock-18 | Hayalet Protokol",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
+        "paint": "1460",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1460.png",
+        "paint_name": "Glock-18 | İfrit Kafesi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
+        "paint": "1421",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1421.png",
+        "paint_name": "Glock-18 | Tam Ayarlı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 4,
+        "weapon_name": "weapon_glock",
         "paint": "1348",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1348.png",
         "paint_name": "Glock-18 | Aynalı Mozaik",
@@ -4428,7 +4652,7 @@
         "weapon_name": "weapon_glock",
         "paint": "1357",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_glock-1357.png",
-        "paint_name": "Glock-18 | Trace Lock",
+        "paint_name": "Glock-18 | Hedef Kilidi",
         "legacy_model": false
     },
     {
@@ -4796,7 +5020,7 @@
         "weapon_name": "weapon_hkp2000",
         "paint": "1359",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_hkp2000-1359.png",
-        "paint_name": "P2000 | Grip Tape",
+        "paint_name": "P2000 | Kavrama Bandı",
         "legacy_model": false
     },
     {
@@ -4933,7 +5157,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-413.png",
         "paint_name": "★ Kelebek Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -4965,7 +5189,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-59.png",
         "paint_name": "★ Kelebek Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -4973,7 +5197,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-409.png",
         "paint_name": "★ Kelebek Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1480.png",
+        "paint_name": "★ Kelebek Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -4994,10 +5226,26 @@
     {
         "weapon_defindex": 515,
         "weapon_name": "weapon_knife_butterfly",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1481.png",
+        "paint_name": "★ Kelebek Bıçak | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-43.png",
         "paint_name": "★ Kelebek Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1482.png",
+        "paint_name": "★ Kelebek Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5013,7 +5261,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-414.png",
         "paint_name": "★ Kelebek Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5042,10 +5290,26 @@
     {
         "weapon_defindex": 515,
         "weapon_name": "weapon_knife_butterfly",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1478.png",
+        "paint_name": "★ Kelebek Bıçak | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-5.png",
         "paint_name": "★ Kelebek Bıçak | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1483.png",
+        "paint_name": "★ Kelebek Bıçak | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5062,6 +5326,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-579.png",
         "paint_name": "★ Kelebek Bıçak | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 515,
+        "weapon_name": "weapon_knife_butterfly",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_butterfly-1479.png",
+        "paint_name": "★ Kelebek Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 515,
@@ -5173,7 +5445,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-413.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5197,7 +5469,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-59.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5205,7 +5477,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-409.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1480.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5221,7 +5501,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-410.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1481.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5230,6 +5518,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-43.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1482.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5245,7 +5541,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-414.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1478.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5258,10 +5562,26 @@
     {
         "weapon_defindex": 518,
         "weapon_name": "weapon_knife_canis",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1483.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-77.png",
         "paint_name": "★ Hayatta Kalma Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 518,
+        "weapon_name": "weapon_knife_canis",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_canis-1479.png",
+        "paint_name": "★ Hayatta Kalma Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 518,
@@ -5373,7 +5693,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-413.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5397,7 +5717,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-59.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5405,7 +5725,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-409.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1480.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5421,7 +5749,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-410.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1481.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5430,6 +5766,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-43.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1482.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5445,7 +5789,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-414.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1478.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5458,10 +5810,26 @@
     {
         "weapon_defindex": 517,
         "weapon_name": "weapon_knife_cord",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1483.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-77.png",
         "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 517,
+        "weapon_name": "weapon_knife_cord",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_cord-1479.png",
+        "paint_name": "★ Paraşüt Kordonu Saplı Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 517,
@@ -5533,7 +5901,15 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-59.png",
         "paint_name": "★ Klasik Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1480.png",
+        "paint_name": "★ Klasik Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5546,10 +5922,26 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1481.png",
+        "paint_name": "★ Klasik Bıçak | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-43.png",
         "paint_name": "★ Klasik Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1482.png",
+        "paint_name": "★ Klasik Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5562,6 +5954,14 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1478.png",
+        "paint_name": "★ Klasik Bıçak | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-5.png",
         "paint_name": "★ Klasik Bıçak | Orman DDPAT",
@@ -5570,10 +5970,26 @@
     {
         "weapon_defindex": 503,
         "weapon_name": "weapon_knife_css",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1483.png",
+        "paint_name": "★ Klasik Bıçak | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-77.png",
         "paint_name": "★ Klasik Bıçak | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 503,
+        "weapon_name": "weapon_knife_css",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_css-1479.png",
+        "paint_name": "★ Klasik Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 503,
@@ -5717,7 +6133,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-413.png",
         "paint_name": "★ Pala Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5749,7 +6165,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-59.png",
         "paint_name": "★ Pala Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5757,7 +6173,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-409.png",
         "paint_name": "★ Pala Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1480.png",
+        "paint_name": "★ Pala Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5778,10 +6202,26 @@
     {
         "weapon_defindex": 512,
         "weapon_name": "weapon_knife_falchion",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1481.png",
+        "paint_name": "★ Pala Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-43.png",
         "paint_name": "★ Pala Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1482.png",
+        "paint_name": "★ Pala Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5797,7 +6237,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-414.png",
         "paint_name": "★ Pala Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5826,10 +6266,26 @@
     {
         "weapon_defindex": 512,
         "weapon_name": "weapon_knife_falchion",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1478.png",
+        "paint_name": "★ Pala Bıçağı | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-5.png",
         "paint_name": "★ Pala Bıçağı | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1483.png",
+        "paint_name": "★ Pala Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5846,6 +6302,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-579.png",
         "paint_name": "★ Pala Bıçağı | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 512,
+        "weapon_name": "weapon_knife_falchion",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_falchion-1479.png",
+        "paint_name": "★ Pala Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 512,
@@ -5997,7 +6461,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-413.png",
         "paint_name": "★ Sustalı Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6029,7 +6493,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-59.png",
         "paint_name": "★ Sustalı Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6037,7 +6501,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-409.png",
         "paint_name": "★ Sustalı Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1480.png",
+        "paint_name": "★ Sustalı Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6053,7 +6525,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-410.png",
         "paint_name": "★ Sustalı Bıçak | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1481.png",
+        "paint_name": "★ Sustalı Bıçak | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6062,6 +6542,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-43.png",
         "paint_name": "★ Sustalı Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1482.png",
+        "paint_name": "★ Sustalı Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6077,7 +6565,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-414.png",
         "paint_name": "★ Sustalı Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6106,10 +6594,26 @@
     {
         "weapon_defindex": 505,
         "weapon_name": "weapon_knife_flip",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1478.png",
+        "paint_name": "★ Sustalı Bıçak | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-5.png",
         "paint_name": "★ Sustalı Bıçak | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1483.png",
+        "paint_name": "★ Sustalı Bıçak | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6126,6 +6630,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-578.png",
         "paint_name": "★ Sustalı Bıçak | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 505,
+        "weapon_name": "weapon_knife_flip",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_flip-1479.png",
+        "paint_name": "★ Sustalı Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 505,
@@ -6277,7 +6789,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-413.png",
         "paint_name": "★ Kancalı Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6309,7 +6821,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-59.png",
         "paint_name": "★ Kancalı Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6317,7 +6829,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-409.png",
         "paint_name": "★ Kancalı Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1480.png",
+        "paint_name": "★ Kancalı Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6333,7 +6853,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-410.png",
         "paint_name": "★ Kancalı Bıçak | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1481.png",
+        "paint_name": "★ Kancalı Bıçak | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6342,6 +6870,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-43.png",
         "paint_name": "★ Kancalı Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1482.png",
+        "paint_name": "★ Kancalı Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6357,7 +6893,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-414.png",
         "paint_name": "★ Kancalı Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6386,10 +6922,26 @@
     {
         "weapon_defindex": 506,
         "weapon_name": "weapon_knife_gut",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1478.png",
+        "paint_name": "★ Kancalı Bıçak | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-5.png",
         "paint_name": "★ Kancalı Bıçak | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1483.png",
+        "paint_name": "★ Kancalı Bıçak | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6406,6 +6958,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-578.png",
         "paint_name": "★ Kancalı Bıçak | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 506,
+        "weapon_name": "weapon_knife_gut",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gut-1479.png",
+        "paint_name": "★ Kancalı Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 506,
@@ -6517,7 +7077,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-413.png",
         "paint_name": "★ Navaja Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6541,7 +7101,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-59.png",
         "paint_name": "★ Navaja Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6549,7 +7109,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-409.png",
         "paint_name": "★ Navaja Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1480.png",
+        "paint_name": "★ Navaja Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6570,10 +7138,26 @@
     {
         "weapon_defindex": 520,
         "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1481.png",
+        "paint_name": "★ Navaja Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-43.png",
         "paint_name": "★ Navaja Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1482.png",
+        "paint_name": "★ Navaja Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6589,7 +7173,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-414.png",
         "paint_name": "★ Navaja Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1478.png",
+        "paint_name": "★ Navaja Bıçağı | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6602,10 +7194,26 @@
     {
         "weapon_defindex": 520,
         "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1483.png",
+        "paint_name": "★ Navaja Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-77.png",
         "paint_name": "★ Navaja Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 520,
+        "weapon_name": "weapon_knife_gypsy_jackknife",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_gypsy_jackknife-1479.png",
+        "paint_name": "★ Navaja Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 520,
@@ -6757,7 +7365,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-413.png",
         "paint_name": "★ Karambit | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6789,7 +7397,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-59.png",
         "paint_name": "★ Karambit | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6797,7 +7405,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-409.png",
         "paint_name": "★ Karambit | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1480.png",
+        "paint_name": "★ Karambit | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6813,7 +7429,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-410.png",
         "paint_name": "★ Karambit | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1481.png",
+        "paint_name": "★ Karambit | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6822,6 +7446,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-43.png",
         "paint_name": "★ Karambit | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1482.png",
+        "paint_name": "★ Karambit | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6837,7 +7469,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-414.png",
         "paint_name": "★ Karambit | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6866,10 +7498,26 @@
     {
         "weapon_defindex": 507,
         "weapon_name": "weapon_knife_karambit",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1478.png",
+        "paint_name": "★ Karambit | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-5.png",
         "paint_name": "★ Karambit | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1483.png",
+        "paint_name": "★ Karambit | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6886,6 +7534,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-578.png",
         "paint_name": "★ Karambit | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 507,
+        "weapon_name": "weapon_knife_karambit",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_karambit-1479.png",
+        "paint_name": "★ Karambit | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 507,
@@ -6957,7 +7613,15 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-59.png",
         "paint_name": "★ Kukri Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1480.png",
+        "paint_name": "★ Kukri Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -6970,10 +7634,26 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1481.png",
+        "paint_name": "★ Kukri Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-43.png",
         "paint_name": "★ Kukri Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1482.png",
+        "paint_name": "★ Kukri Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -6986,6 +7666,14 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1478.png",
+        "paint_name": "★ Kukri Bıçağı | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-5.png",
         "paint_name": "★ Kukri Bıçağı | Orman DDPAT",
@@ -6994,10 +7682,26 @@
     {
         "weapon_defindex": 526,
         "weapon_name": "weapon_knife_kukri",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1483.png",
+        "paint_name": "★ Kukri Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-77.png",
         "paint_name": "★ Kukri Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 526,
+        "weapon_name": "weapon_knife_kukri",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_kukri-1479.png",
+        "paint_name": "★ Kukri Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 526,
@@ -7141,7 +7845,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-413.png",
         "paint_name": "★ M9 Bayonet | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7173,7 +7877,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-59.png",
         "paint_name": "★ M9 Bayonet | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7181,7 +7885,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-409.png",
         "paint_name": "★ M9 Bayonet | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1480.png",
+        "paint_name": "★ M9 Bayonet | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7202,10 +7914,26 @@
     {
         "weapon_defindex": 508,
         "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1481.png",
+        "paint_name": "★ M9 Bayonet | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-43.png",
         "paint_name": "★ M9 Bayonet | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1482.png",
+        "paint_name": "★ M9 Bayonet | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7221,7 +7949,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-414.png",
         "paint_name": "★ M9 Bayonet | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7250,10 +7978,26 @@
     {
         "weapon_defindex": 508,
         "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1478.png",
+        "paint_name": "★ M9 Bayonet | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-5.png",
         "paint_name": "★ M9 Bayonet | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1483.png",
+        "paint_name": "★ M9 Bayonet | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7270,6 +8014,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-579.png",
         "paint_name": "★ M9 Bayonet | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 508,
+        "weapon_name": "weapon_knife_m9_bayonet",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_m9_bayonet-1479.png",
+        "paint_name": "★ M9 Bayonet | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 508,
@@ -7381,7 +8133,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-413.png",
         "paint_name": "★ Göçebe Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7405,7 +8157,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-59.png",
         "paint_name": "★ Göçebe Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7413,7 +8165,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-409.png",
         "paint_name": "★ Göçebe Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1480.png",
+        "paint_name": "★ Göçebe Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7429,7 +8189,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-410.png",
         "paint_name": "★ Göçebe Bıçağı | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1481.png",
+        "paint_name": "★ Göçebe Bıçağı | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7438,6 +8206,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-43.png",
         "paint_name": "★ Göçebe Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1482.png",
+        "paint_name": "★ Göçebe Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7453,7 +8229,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-414.png",
         "paint_name": "★ Göçebe Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1478.png",
+        "paint_name": "★ Göçebe Bıçağı | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7466,10 +8250,26 @@
     {
         "weapon_defindex": 521,
         "weapon_name": "weapon_knife_outdoor",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1483.png",
+        "paint_name": "★ Göçebe Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-77.png",
         "paint_name": "★ Göçebe Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 521,
+        "weapon_name": "weapon_knife_outdoor",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_outdoor-1479.png",
+        "paint_name": "★ Göçebe Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 521,
@@ -7621,7 +8421,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-413.png",
         "paint_name": "★ Gölge Hançerler | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7653,7 +8453,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-59.png",
         "paint_name": "★ Gölge Hançerler | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7661,7 +8461,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-409.png",
         "paint_name": "★ Gölge Hançerler | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1480.png",
+        "paint_name": "★ Gölge Hançerler | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7682,10 +8490,26 @@
     {
         "weapon_defindex": 516,
         "weapon_name": "weapon_knife_push",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1481.png",
+        "paint_name": "★ Gölge Hançerler | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-43.png",
         "paint_name": "★ Gölge Hançerler | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1482.png",
+        "paint_name": "★ Gölge Hançerler | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7701,7 +8525,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-414.png",
         "paint_name": "★ Gölge Hançerler | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7730,10 +8554,26 @@
     {
         "weapon_defindex": 516,
         "weapon_name": "weapon_knife_push",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1478.png",
+        "paint_name": "★ Gölge Hançerler | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-5.png",
         "paint_name": "★ Gölge Hançerler | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1483.png",
+        "paint_name": "★ Gölge Hançerler | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7750,6 +8590,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-579.png",
         "paint_name": "★ Gölge Hançerler | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 516,
+        "weapon_name": "weapon_knife_push",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_push-1479.png",
+        "paint_name": "★ Gölge Hançerler | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 516,
@@ -7861,7 +8709,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-413.png",
         "paint_name": "★ İskelet Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7885,7 +8733,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-59.png",
         "paint_name": "★ İskelet Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7893,7 +8741,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-409.png",
         "paint_name": "★ İskelet Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1480.png",
+        "paint_name": "★ İskelet Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7909,7 +8765,15 @@
         "paint": "410",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-410.png",
         "paint_name": "★ İskelet Bıçak | Şam Çeliği",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1481.png",
+        "paint_name": "★ İskelet Bıçak | Lekeli",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7918,6 +8782,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-43.png",
         "paint_name": "★ İskelet Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1482.png",
+        "paint_name": "★ İskelet Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7933,7 +8805,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-414.png",
         "paint_name": "★ İskelet Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1478.png",
+        "paint_name": "★ İskelet Bıçak | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -7946,10 +8826,26 @@
     {
         "weapon_defindex": 525,
         "weapon_name": "weapon_knife_skeleton",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1483.png",
+        "paint_name": "★ İskelet Bıçak | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-77.png",
         "paint_name": "★ İskelet Bıçak | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 525,
+        "weapon_name": "weapon_knife_skeleton",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_skeleton-1479.png",
+        "paint_name": "★ İskelet Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 525,
@@ -8061,7 +8957,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-413.png",
         "paint_name": "★ Stiletto Bıçak | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8085,7 +8981,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-59.png",
         "paint_name": "★ Stiletto Bıçak | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8093,7 +8989,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-409.png",
         "paint_name": "★ Stiletto Bıçak | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1480.png",
+        "paint_name": "★ Stiletto Bıçak | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8114,10 +9018,26 @@
     {
         "weapon_defindex": 522,
         "weapon_name": "weapon_knife_stiletto",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1481.png",
+        "paint_name": "★ Stiletto Bıçak | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-43.png",
         "paint_name": "★ Stiletto Bıçak | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1482.png",
+        "paint_name": "★ Stiletto Bıçak | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8133,7 +9053,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-414.png",
         "paint_name": "★ Stiletto Bıçak | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1478.png",
+        "paint_name": "★ Stiletto Bıçak | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8146,10 +9074,26 @@
     {
         "weapon_defindex": 522,
         "weapon_name": "weapon_knife_stiletto",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1483.png",
+        "paint_name": "★ Stiletto Bıçak | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-77.png",
         "paint_name": "★ Stiletto Bıçak | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 522,
+        "weapon_name": "weapon_knife_stiletto",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_stiletto-1479.png",
+        "paint_name": "★ Stiletto Bıçak | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 522,
@@ -8301,7 +9245,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-413.png",
         "paint_name": "★ Bowie Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8333,7 +9277,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-59.png",
         "paint_name": "★ Bowie Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8341,7 +9285,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-409.png",
         "paint_name": "★ Bowie Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1480.png",
+        "paint_name": "★ Bowie Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8362,10 +9314,26 @@
     {
         "weapon_defindex": 514,
         "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1481.png",
+        "paint_name": "★ Bowie Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-43.png",
         "paint_name": "★ Bowie Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1482.png",
+        "paint_name": "★ Bowie Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8381,7 +9349,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-414.png",
         "paint_name": "★ Bowie Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8410,10 +9378,26 @@
     {
         "weapon_defindex": 514,
         "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1478.png",
+        "paint_name": "★ Bowie Bıçağı | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-5.png",
         "paint_name": "★ Bowie Bıçağı | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1483.png",
+        "paint_name": "★ Bowie Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8430,6 +9414,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-579.png",
         "paint_name": "★ Bowie Bıçağı | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 514,
+        "weapon_name": "weapon_knife_survival_bowie",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_survival_bowie-1479.png",
+        "paint_name": "★ Bowie Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 514,
@@ -8581,7 +9573,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-413.png",
         "paint_name": "★ Avcı Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8613,7 +9605,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-59.png",
         "paint_name": "★ Avcı Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8621,7 +9613,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-409.png",
         "paint_name": "★ Avcı Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1480.png",
+        "paint_name": "★ Avcı Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8642,10 +9642,26 @@
     {
         "weapon_defindex": 509,
         "weapon_name": "weapon_knife_tactical",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1481.png",
+        "paint_name": "★ Avcı Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-43.png",
         "paint_name": "★ Avcı Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1482.png",
+        "paint_name": "★ Avcı Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8661,7 +9677,7 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-414.png",
         "paint_name": "★ Avcı Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8677,7 +9693,7 @@
         "paint": "620",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-620.png",
         "paint_name": "★ Avcı Bıçağı | Morötesi",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8698,10 +9714,26 @@
     {
         "weapon_defindex": 509,
         "weapon_name": "weapon_knife_tactical",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1478.png",
+        "paint_name": "★ Avcı Bıçağı | Orman DDPAT",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
         "paint": "5",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-5.png",
         "paint_name": "★ Avcı Bıçağı | Orman DDPAT",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1483.png",
+        "paint_name": "★ Avcı Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8718,6 +9750,14 @@
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-579.png",
         "paint_name": "★ Avcı Bıçağı | Parlak Su",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 509,
+        "weapon_name": "weapon_knife_tactical",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_tactical-1479.png",
+        "paint_name": "★ Avcı Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 509,
@@ -8821,7 +9861,7 @@
         "paint": "413",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-413.png",
         "paint_name": "★ Ursus Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -8845,7 +9885,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-59.png",
         "paint_name": "★ Ursus Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -8853,7 +9893,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-409.png",
         "paint_name": "★ Ursus Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1480.png",
+        "paint_name": "★ Ursus Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -8874,10 +9922,26 @@
     {
         "weapon_defindex": 519,
         "weapon_name": "weapon_knife_ursus",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1481.png",
+        "paint_name": "★ Ursus Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-43.png",
         "paint_name": "★ Ursus Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1482.png",
+        "paint_name": "★ Ursus Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -8893,7 +9957,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-414.png",
         "paint_name": "★ Ursus Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1478.png",
+        "paint_name": "★ Ursus Bıçağı | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -8906,10 +9978,26 @@
     {
         "weapon_defindex": 519,
         "weapon_name": "weapon_knife_ursus",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1483.png",
+        "paint_name": "★ Ursus Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-77.png",
         "paint_name": "★ Ursus Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 519,
+        "weapon_name": "weapon_knife_ursus",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_ursus-1479.png",
+        "paint_name": "★ Ursus Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 519,
@@ -9021,7 +10109,7 @@
         "paint": "856",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-856.png",
         "paint_name": "★ Talon Bıçağı | Solgun Mermer",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9045,7 +10133,7 @@
         "paint": "59",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-59.png",
         "paint_name": "★ Talon Bıçağı | Katliam",
-        "legacy_model": true
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9053,7 +10141,15 @@
         "paint": "409",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-409.png",
         "paint_name": "★ Talon Bıçağı | Kaplan Dişi",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1480",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1480.png",
+        "paint_name": "★ Talon Bıçağı | Mavi Çelik",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9074,10 +10170,26 @@
     {
         "weapon_defindex": 523,
         "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1481",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1481.png",
+        "paint_name": "★ Talon Bıçağı | Lekeli",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
         "paint": "43",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-43.png",
         "paint_name": "★ Talon Bıçağı | Lekeli",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1482",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1482.png",
+        "paint_name": "★ Talon Bıçağı | Sertleştirilmiş Kasa",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9093,7 +10205,15 @@
         "paint": "414",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-414.png",
         "paint_name": "★ Talon Bıçağı | Pas Kaplı",
-        "legacy_model": true
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1478",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1478.png",
+        "paint_name": "★ Talon Bıçağı | Orman DDPAT",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9106,10 +10226,26 @@
     {
         "weapon_defindex": 523,
         "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1483",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1483.png",
+        "paint_name": "★ Talon Bıçağı | Kuzey Ormanı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
         "paint": "77",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-77.png",
         "paint_name": "★ Talon Bıçağı | Kuzey Ormanı",
         "legacy_model": true
+    },
+    {
+        "weapon_defindex": 523,
+        "weapon_name": "weapon_knife_widowmaker",
+        "paint": "1479",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_knife_widowmaker-1479.png",
+        "paint_name": "★ Talon Bıçağı | Kızıl Ağ",
+        "legacy_model": false
     },
     {
         "weapon_defindex": 523,
@@ -9284,7 +10420,7 @@
         "weapon_name": "weapon_m249",
         "paint": "1370",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-1370.png",
-        "paint_name": "M249 | Sleet",
+        "paint_name": "M249 | Tipi",
         "legacy_model": false
     },
     {
@@ -9293,6 +10429,14 @@
         "paint": "1298",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-1298.png",
         "paint_name": "M249 | Yeşil Kamuflaj",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 14,
+        "weapon_name": "weapon_m249",
+        "paint": "1435",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m249-1435.png",
+        "paint_name": "M249 | Gıdak Bloklar",
         "legacy_model": false
     },
     {
@@ -9668,7 +10812,7 @@
         "weapon_name": "weapon_m4a1",
         "paint": "1364",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1364.png",
-        "paint_name": "M4A4 | Aeolian Dark",
+        "paint_name": "M4A4 | Kara Yel",
         "legacy_model": false
     },
     {
@@ -9677,6 +10821,22 @@
         "paint": "1266",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1266.png",
         "paint_name": "M4A4 | Deniz Kamuflajı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
+        "paint": "1446",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1446.png",
+        "paint_name": "M4A4 | Karanlık Ajan",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
+        "paint": "1463",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1463.png",
+        "paint_name": "M4A4 | Falak",
         "legacy_model": false
     },
     {
@@ -9709,6 +10869,14 @@
         "paint": "1165",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1165.png",
         "paint_name": "M4A4 | Gravür Lordu",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 16,
+        "weapon_name": "weapon_m4a1",
+        "paint": "1432",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1-1432.png",
+        "paint_name": "M4A4 | Isırmatik",
         "legacy_model": false
     },
     {
@@ -10020,7 +11188,15 @@
         "weapon_name": "weapon_m4a1_silencer",
         "paint": "1376",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1376.png",
-        "paint_name": "M4A1-S | Party Animal",
+        "paint_name": "M4A1-S | Parti Canavarı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 60,
+        "weapon_name": "weapon_m4a1_silencer",
+        "paint": "1476",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1476.png",
+        "paint_name": "M4A1-S | Ölümcül Bozulma",
         "legacy_model": false
     },
     {
@@ -10029,6 +11205,14 @@
         "paint": "1166",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1166.png",
         "paint_name": "M4A1-S | Siyah Lotus",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 60,
+        "weapon_name": "weapon_m4a1_silencer",
+        "paint": "1433",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_m4a1_silencer-1433.png",
+        "paint_name": "M4A1-S | Elektrum",
         "legacy_model": false
     },
     {
@@ -10452,7 +11636,7 @@
         "weapon_name": "weapon_mac10",
         "paint": "1367",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1367.png",
-        "paint_name": "MAC-10 | Snow Splash",
+        "paint_name": "MAC-10 | Kar Sıçraması",
         "legacy_model": false
     },
     {
@@ -10469,6 +11653,14 @@
         "paint": "1285",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1285.png",
         "paint_name": "MAC-10 | Kavak Çalılığı",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 17,
+        "weapon_name": "weapon_mac10",
+        "paint": "1454",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1454.png",
+        "paint_name": "MAC-10 | Arabesk Mozaik",
         "legacy_model": false
     },
     {
@@ -10501,6 +11693,14 @@
         "paint": "1204",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1204.png",
         "paint_name": "MAC-10 | Raydan Çıkma",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 17,
+        "weapon_name": "weapon_mac10",
+        "paint": "1448",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mac10-1448.png",
+        "paint_name": "MAC-10 | Video Kamera",
         "legacy_model": false
     },
     {
@@ -11020,7 +12220,7 @@
         "weapon_name": "weapon_mp5sd",
         "paint": "1366",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp5sd-1366.png",
-        "paint_name": "MP5-SD | Snow Splash",
+        "paint_name": "MP5-SD | Kar Sıçraması",
         "legacy_model": false
     },
     {
@@ -11052,7 +12252,7 @@
         "weapon_name": "weapon_mp5sd",
         "paint": "1385",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp5sd-1385.png",
-        "paint_name": "MP5-SD | Picnic",
+        "paint_name": "MP5-SD | Piknik",
         "legacy_model": false
     },
     {
@@ -11284,7 +12484,23 @@
         "weapon_name": "weapon_mp7",
         "paint": "1386",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1386.png",
-        "paint_name": "MP7 | Coral Paisley",
+        "paint_name": "MP7 | Mercan Pateh",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 33,
+        "weapon_name": "weapon_mp7",
+        "paint": "1436",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1436.png",
+        "paint_name": "MP7 | Çizik Amber",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 33,
+        "weapon_name": "weapon_mp7",
+        "paint": "1468",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp7-1468.png",
+        "paint_name": "MP7 | İkili",
         "legacy_model": false
     },
     {
@@ -11666,9 +12882,33 @@
     {
         "weapon_defindex": 34,
         "weapon_name": "weapon_mp9",
+        "paint": "1473",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1473.png",
+        "paint_name": "MP9 | Çöl Engereği",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
         "paint": "1193",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1193.png",
         "paint_name": "MP9 | Nexus",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
+        "paint": "1469",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1469.png",
+        "paint_name": "MP9 | Casus Prototipi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 34,
+        "weapon_name": "weapon_mp9",
+        "paint": "1423",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1423.png",
+        "paint_name": "MP9 | Kentin Hakimi",
         "legacy_model": false
     },
     {
@@ -11708,7 +12948,7 @@
         "weapon_name": "weapon_mp9",
         "paint": "1375",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1375.png",
-        "paint_name": "MP9 | Dizzy",
+        "paint_name": "MP9 | Sersem",
         "legacy_model": false
     },
     {
@@ -11716,7 +12956,7 @@
         "weapon_name": "weapon_mp9",
         "paint": "1388",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_mp9-1388.png",
-        "paint_name": "MP9 | Bee-Tron",
+        "paint_name": "MP9 | Arımatik",
         "legacy_model": false
     },
     {
@@ -12212,7 +13452,7 @@
         "weapon_name": "weapon_nova",
         "paint": "1368",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1368.png",
-        "paint_name": "Nova | Currents",
+        "paint_name": "Nova | Esinti",
         "legacy_model": false
     },
     {
@@ -12221,6 +13461,14 @@
         "paint": "1162",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1162.png",
         "paint_name": "Nova | Karanlık Mühür",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 35,
+        "weapon_name": "weapon_nova",
+        "paint": "1474",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1474.png",
+        "paint_name": "Nova | Gündüz Güneşi",
         "legacy_model": false
     },
     {
@@ -12237,6 +13485,14 @@
         "paint": "1192",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1192.png",
         "paint_name": "Nova | Doğan Güneş",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 35,
+        "weapon_name": "weapon_nova",
+        "paint": "1442",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_nova-1442.png",
+        "paint_name": "Nova | Akıllı Silah",
         "legacy_model": false
     },
     {
@@ -12668,7 +13924,7 @@
         "weapon_name": "weapon_p250",
         "paint": "1369",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1369.png",
-        "paint_name": "P250 | Sleet",
+        "paint_name": "P250 | Tipi",
         "legacy_model": false
     },
     {
@@ -12693,6 +13949,22 @@
         "paint": "130",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-130.png",
         "paint_name": "P250 | Merkez Üssü",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 36,
+        "weapon_name": "weapon_p250",
+        "paint": "1420",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1420.png",
+        "paint_name": "P250 | Kintsugi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 36,
+        "weapon_name": "weapon_p250",
+        "paint": "1455",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p250-1455.png",
+        "paint_name": "P250 | Nilüfer Çiçeği Desenli",
         "legacy_model": false
     },
     {
@@ -13076,7 +14348,7 @@
         "weapon_name": "weapon_p90",
         "paint": "1361",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-1361.png",
-        "paint_name": "P90 | Aeolian Light",
+        "paint_name": "P90 | Ak Yel",
         "legacy_model": false
     },
     {
@@ -13101,6 +14373,14 @@
         "paint": "1190",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-1190.png",
         "paint_name": "P90 | Dalga Kıran",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 19,
+        "weapon_name": "weapon_p90",
+        "paint": "1419",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_p90-1419.png",
+        "paint_name": "P90 | Ölüm Bakışı",
         "legacy_model": false
     },
     {
@@ -13354,6 +14634,14 @@
     {
         "weapon_defindex": 64,
         "weapon_name": "weapon_revolver",
+        "paint": "1445",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-1445.png",
+        "paint_name": "R8 Revolver | Hükûmdar",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 64,
+        "weapon_name": "weapon_revolver",
         "paint": "123",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-123.png",
         "paint_name": "R8 Revolver | Tango",
@@ -13380,7 +14668,7 @@
         "weapon_name": "weapon_revolver",
         "paint": "1389",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-1389.png",
-        "paint_name": "R8 Revolver | Mauve Aside",
+        "paint_name": "R8 Revolver | Leylak Bir Yana",
         "legacy_model": false
     },
     {
@@ -13396,7 +14684,7 @@
         "weapon_name": "weapon_revolver",
         "paint": "1363",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_revolver-1363.png",
-        "paint_name": "R8 Revolver | Dark Chamber",
+        "paint_name": "R8 Revolver | Karanlık Hazne",
         "legacy_model": false
     },
     {
@@ -13652,7 +14940,15 @@
         "weapon_name": "weapon_sawedoff",
         "paint": "1391",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1391.png",
-        "paint_name": "Sawed-Off | Crimson Batik",
+        "paint_name": "Sawed-Off | Kızıl Batik",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 29,
+        "weapon_name": "weapon_sawedoff",
+        "paint": "1427",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1427.png",
+        "paint_name": "Sawed-Off | Füzyon",
         "legacy_model": false
     },
     {
@@ -13661,6 +14957,14 @@
         "paint": "1160",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1160.png",
         "paint_name": "Sawed-Off | Analog Girdi",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 29,
+        "weapon_name": "weapon_sawedoff",
+        "paint": "1475",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sawedoff-1475.png",
+        "paint_name": "Sawed-Off | Ay Yılanı",
         "legacy_model": false
     },
     {
@@ -13876,7 +15180,7 @@
         "weapon_name": "weapon_scar20",
         "paint": "1371",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1371.png",
-        "paint_name": "SCAR-20 | Zinc",
+        "paint_name": "SCAR-20 | Çinko",
         "legacy_model": false
     },
     {
@@ -13890,9 +15194,25 @@
     {
         "weapon_defindex": 38,
         "weapon_name": "weapon_scar20",
+        "paint": "1470",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1470.png",
+        "paint_name": "SCAR-20 | Arktik Kamuflajlı Paneller",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 38,
+        "weapon_name": "weapon_scar20",
         "paint": "1343",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1343.png",
         "paint_name": "SCAR-20 | Kafes",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 38,
+        "weapon_name": "weapon_scar20",
+        "paint": "1453",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_scar20-1453.png",
+        "paint_name": "SCAR-20 | Sirocco Yazısı",
         "legacy_model": false
     },
     {
@@ -14164,7 +15484,7 @@
         "weapon_name": "weapon_sg556",
         "paint": "1394",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_sg556-1394.png",
-        "paint_name": "SG 553 | Safari Print",
+        "paint_name": "SG 553 | Safari Baskısı",
         "legacy_model": false
     },
     {
@@ -14444,7 +15764,7 @@
         "weapon_name": "weapon_ssg08",
         "paint": "1379",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ssg08-1379.png",
-        "paint_name": "SSG 08 | Calligrafaux",
+        "paint_name": "SSG 08 | Kaligrafi",
         "legacy_model": false
     },
     {
@@ -14644,7 +15964,7 @@
         "weapon_name": "weapon_taser",
         "paint": "1382",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_taser-1382.png",
-        "paint_name": "Zeus x27 | Earth Mandala",
+        "paint_name": "Zeus x27 | Toprak Desenli Mandala",
         "legacy_model": false
     },
     {
@@ -14956,7 +16276,7 @@
         "weapon_name": "weapon_tec9",
         "paint": "1384",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1384.png",
-        "paint_name": "Tec-9 | Banana Leaf",
+        "paint_name": "Tec-9 | Muz Yaprağı",
         "legacy_model": false
     },
     {
@@ -15053,6 +16373,22 @@
         "paint": "1159",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1159.png",
         "paint_name": "Tec-9 | Cüruf",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 30,
+        "weapon_name": "weapon_tec9",
+        "paint": "1447",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1447.png",
+        "paint_name": "Tec-9 | Çeper",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 30,
+        "weapon_name": "weapon_tec9",
+        "paint": "1462",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_tec9-1462.png",
+        "paint_name": "Tec-9 | Sultan",
         "legacy_model": false
     },
     {
@@ -15316,7 +16652,7 @@
         "weapon_name": "weapon_ump45",
         "paint": "1387",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1387.png",
-        "paint_name": "UMP-45 | Warm Blooded",
+        "paint_name": "UMP-45 | Sıcakkanlı",
         "legacy_model": false
     },
     {
@@ -15405,6 +16741,14 @@
         "paint": "1194",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1194.png",
         "paint_name": "UMP-45 | Nakavt Fabrikası",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 24,
+        "weapon_name": "weapon_ump45",
+        "paint": "1426",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_ump45-1426.png",
+        "paint_name": "UMP-45 | Leş Alıcı",
         "legacy_model": false
     },
     {
@@ -15700,7 +17044,7 @@
         "weapon_name": "weapon_usp_silencer",
         "paint": "1377",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1377.png",
-        "paint_name": "USP-S | Sleeping Potion",
+        "paint_name": "USP-S | Uyku İksiri",
         "legacy_model": false
     },
     {
@@ -15765,6 +17109,22 @@
         "paint": "1173",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1173.png",
         "paint_name": "USP-S | Çene Kıran",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 61,
+        "weapon_name": "weapon_usp_silencer",
+        "paint": "1431",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1431.png",
+        "paint_name": "USP-S | Sessiz Atış",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 61,
+        "weapon_name": "weapon_usp_silencer",
+        "paint": "1451",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_usp_silencer-1451.png",
+        "paint_name": "USP-S | Spiral Bozulma",
         "legacy_model": false
     },
     {
@@ -16101,6 +17461,14 @@
         "paint": "1078",
         "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014-1078.png",
         "paint_name": "XM1014 | Mavi Tekerlek",
+        "legacy_model": false
+    },
+    {
+        "weapon_defindex": 25,
+        "weapon_name": "weapon_xm1014",
+        "paint": "1471",
+        "image": "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/weapon_xm1014-1471.png",
+        "paint_name": "XM1014 | Gizli Üs",
         "legacy_model": false
     },
     {

@@ -7,16 +7,56 @@ on:
   pull_request:
     branches: [ "main", "master" ]
   workflow_dispatch:
+    inputs:
+      sync_data:
+        description: Take the item lists of the original WeaponPaints first
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 4 * * *'
 
 permissions:
   contents: write
 
 jobs:
+  # Once a day: take the item lists (skins, gloves, agents, stickers...) of the original WeaponPaints.
+  # When they changed, commit them with the next patch version; the build job then releases it,
+  # and Matchdesk offers it as a WeaponPaints update.
+  sync:
+    if: github.event_name == 'schedule' || inputs.sync_data
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.sync.outputs.sha }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Sync item lists
+      id: sync
+      run: |
+        out=$(bash scripts/sync-data.sh)
+        echo "$out"
+        if [ "$(echo "$out" | tail -1)" != changed ]; then exit 0; fi
+        VERSION=$(grep -oP 'ModuleVersion\s*=>\s*"\K[^"]*' WeaponPaints.cs)
+        NEXT=$(echo "$VERSION" | awk -F'[.-]' '{ printf "%d.%d.%d-patched", $1, $2, $3 + 1 }')
+        sed -i "s/ModuleVersion => \"$VERSION\"/ModuleVersion => \"$NEXT\"/" WeaponPaints.cs
+        echo "$NEXT" > VERSION
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add data website/data WeaponPaints.cs VERSION
+        git commit -q -m "Version $NEXT: item lists from the original WeaponPaints"
+        git push -q
+        echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
   build:
+    needs: sync
+    # Pushes and pull requests build as before (sync is skipped); a daily run builds only when the lists changed
+    if: ${{ !cancelled() && needs.sync.result != 'failure' && (needs.sync.result == 'skipped' || needs.sync.outputs.sha != '') }}
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: ${{ needs.sync.outputs.sha }}
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
