@@ -224,13 +224,12 @@ namespace WeaponPaints
 			return HookResult.Continue;
 		}
 
-		// Skins fail without a word when CS2 moves a function the plugin calls (gamedata/weaponpaints.json
-		// is then out of date). Say it once per map, so it shows up in the logs.
+		// outdated gamedata makes skins fail silently: warn once per map
 		private bool _skinErrorReported;
 		private void ReportSkinError(Exception ex)
 		{
 			var cause = ex is System.Reflection.TargetInvocationException { InnerException: { } inner } ? inner : ex;
-			// Only failed native calls: a weapon lying on the map without an owner also lands in these catches
+			// ownerless weapons on the map also end up in these catches
 			if (_skinErrorReported || cause is not NativeException) return;
 			_skinErrorReported = true;
 			Logger.LogError("Skins are not applied: {Error}. If CS2 was updated, gamedata/weaponpaints.json may be out of date.", cause.Message);

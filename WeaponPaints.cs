@@ -128,7 +128,7 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
 		Utility.ShowAd(ModuleVersion);
 		Task.Run(async () => await Utility.CheckVersion(ModuleVersion, Logger));
 
-		// With Valve's server guidelines on, CounterStrikeSharp blocks the item changes and skins silently do nothing
+		// FollowCS2ServerGuidelines blocks item changes, skins silently do nothing
 		if (CoreConfig.FollowCS2ServerGuidelines)
 			Logger.LogWarning("Skins will not be applied: set \"FollowCS2ServerGuidelines\": false in addons/counterstrikesharp/configs/core.json and restart the server.");
 	}
@@ -137,7 +137,6 @@ public partial class WeaponPaints : BasePlugin, IPluginConfig<WeaponPaintsConfig
 	{
 		try
 		{
-			// MenuManager is optional: without it the built-in screen menu is used
 			try { MenuApi = MenuCapability.Get(); }
 			catch (KeyNotFoundException) { MenuApi = null; }
 

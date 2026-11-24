@@ -11,14 +11,13 @@ namespace WeaponPaints;
 
 public partial class WeaponPaints
 {
-	// !ws opens these: the weapon list and the skins of one weapon (by its menu name)
+	// !ws: weapon list, then skins of one weapon
 	private IMenu? _weaponSelectionMenu;
 	private Action<CCSPlayerController, string>? _openWeaponSkins;
 
-	// Team whose choice a menu shows: spectators pick for both, shown as T
+	// spectators edit both teams, shown as T
 	private static CsTeam MenuTeam(CCSPlayerController player) => player.TeamNum < 2 ? CsTeam.Terrorist : player.Team;
 
-	// Picture of the weapon (or knife) without a skin
 	private static string? DefaultImage(string className) =>
 		SkinsList.FirstOrDefault(s => s["weapon_name"]?.ToString() == className && s["paint"]?.ToString() == "0")?["image"]?.ToString();
 
@@ -83,7 +82,6 @@ public partial class WeaponPaints
 		if (!Config.Additional.SkinEnabled) return;
 		if (!Utility.IsPlayerValid(player)) return;
 
-		// Screen menu: skins of the weapon in hands, or the weapon list when it has none
 		if (_weaponSelectionMenu is ScreenMenu && _openWeaponSkins != null)
 		{
 			var weapon = player!.PlayerPawn.Value?.WeaponServices?.ActiveWeapon.Value;

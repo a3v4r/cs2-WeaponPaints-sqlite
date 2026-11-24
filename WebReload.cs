@@ -9,11 +9,9 @@ using CounterStrikeSharp.API.Modules.Commands;
 
 namespace WeaponPaints;
 
-// The skins website (cs2-skins-web) on the same LAN. A player opens it on the computer he plays from:
-// the site asks here who plays from that IP and lets him in, nothing to type.
+// skins website on the LAN: logs players in by the IP they play from
 public partial class WeaponPaints
 {
-	// IP the player plays from (no port)
 	private static string? PlayerIp(CCSPlayerController player)
 	{
 		var ip = player.IpAddress?.Split(':')[0];
@@ -23,7 +21,6 @@ public partial class WeaponPaints
 	private static IEnumerable<CCSPlayerController> HumanPlayers() =>
 		Utilities.GetPlayers().Where(p => p is { IsValid: true, IsBot: false, IsHLTV: false });
 
-	// IPv4 addresses of this machine
 	private static HashSet<string> OwnAddresses()
 	{
 		var set = new HashSet<string> { "127.0.0.1" };
@@ -39,7 +36,7 @@ public partial class WeaponPaints
 		return b[0] == 10 || (b[0] == 172 && b[1] >= 16 && b[1] <= 31) || (b[0] == 192 && b[1] == 168);
 	}
 
-	// LAN address of this machine: an up adapter with a gateway and a private IPv4 (skips VPN/virtual ones)
+	// up adapter with a gateway and a private IPv4, skips VPN/virtual ones
 	private static string? LanIp() =>
 		NetworkInterface.GetAllNetworkInterfaces()
 			.Where(n => n.OperationalStatus == OperationalStatus.Up &&
@@ -49,14 +46,12 @@ public partial class WeaponPaints
 			.Select(a => a.Address)
 			.FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork && IsPrivateLan(a))?.ToString();
 
-	// Menu pictures from the skins site (it keeps copies of the GitHub ones), so LAN players do not wait for GitHub.
-	// Used only while the site answers; otherwise the menu shows the GitHub addresses as before.
+	// menu pictures from the site's copies while it answers, else from GitHub
 	private const string UpstreamImages = "https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/website/img/skins/";
 	private static readonly HttpClient SiteHttp = new() { Timeout = TimeSpan.FromSeconds(3) };
 	private volatile string? _menuImageBase;
 	private DateTime _menuImageCheckedAt = DateTime.MinValue;
 
-	// "auto": the site runs on this machine on port 80, players reach it by the LAN IP
 	private string? SiteImageBase()
 	{
 		if (string.Equals(Config.Website, "auto", StringComparison.OrdinalIgnoreCase))
@@ -92,7 +87,7 @@ public partial class WeaponPaints
 
 	private string MenuImage(string image)
 	{
-		// Check again now and then: the site may be started or stopped while the map runs
+		// the site can be started or stopped mid-map
 		var age = DateTime.UtcNow - _menuImageCheckedAt;
 		if (age > TimeSpan.FromSeconds(_menuImageBase == null ? 60 : 300)) CheckSiteImages();
 
@@ -102,8 +97,7 @@ public partial class WeaponPaints
 			: image;
 	}
 
-	// "Website": "auto" -> this machine's name ("aevar-pc/"), or its LAN IP when the name is a
-	// generated one like DESKTOP-7H3K2LF. Any other value is shown as is (e.g. an IP where names don't resolve).
+	// "auto": computer name, or LAN IP for generated names like DESKTOP-7H3K2LF
 	private string SiteAddress()
 	{
 		if (!string.Equals(Config.Website, "auto", StringComparison.OrdinalIgnoreCase)) return Config.Website;
@@ -112,8 +106,7 @@ public partial class WeaponPaints
 		return generated ? LanIp() ?? $"{name}/" : $"{name}/";
 	}
 
-	// Address to show players, or null. With "auto" the site is ours (Matchdesk skins-site): shown only while
-	// it answers, so a server without it does not send players to a dead address. Any other value is shown as is.
+	// "auto" is shown only while the site answers
 	private string? ShownSiteAddress()
 	{
 		if (string.IsNullOrWhiteSpace(Config.Website)) return null;
@@ -131,7 +124,7 @@ public partial class WeaponPaints
 		player.Print(address != null ? Localizer["wp_site_link", address] : Localizer["wp_site_off"]);
 	}
 
-	// Site login: the one player who plays from this IP ("local": from this machine)
+	// site login: the one player on this IP ("local" = this machine)
 	[ConsoleCommand("css_wp_who", "Website login: player playing from an IP")]
 	[CommandHelper(minArgs: 1, usage: "<ip|local>", whoCanExecute: CommandUsage.SERVER_ONLY)]
 	public void OnCommandWebWho(CCSPlayerController? caller, CommandInfo info)
@@ -148,7 +141,7 @@ public partial class WeaponPaints
 		info.ReplyToCommand($"[WeaponPaints] wp_who {ip}: {answer}");
 	}
 
-	// Site session check: is the player still here, and from which IP
+	// site session check
 	[ConsoleCommand("css_wp_ip", "Website session: IP of an online player")]
 	[CommandHelper(minArgs: 1, usage: "<steamid64>", whoCanExecute: CommandUsage.SERVER_ONLY)]
 	public void OnCommandWebIp(CCSPlayerController? caller, CommandInfo info)
@@ -158,8 +151,7 @@ public partial class WeaponPaints
 		info.ReplyToCommand($"[WeaponPaints] wp_ip {steamId}: {(player == null ? "offline" : PlayerIp(player))}");
 	}
 
-	// The skins website calls this over RCON after it saves a player's choice:
-	// the player gets it at once, without !wp or reconnecting.
+	// the site calls this after a save so the change applies at once
 	[ConsoleCommand("css_wp_reload", "Reload a player's skins from the database")]
 	[CommandHelper(minArgs: 1, usage: "<steamid64>", whoCanExecute: CommandUsage.SERVER_ONLY)]
 	public void OnCommandWebReload(CCSPlayerController? caller, CommandInfo info)
@@ -184,7 +176,7 @@ public partial class WeaponPaints
 			IpAddress = player.IpAddress?.Split(":")[0]
 		};
 
-		// Loading only adds rows, so drop what the player had: a removed skin must go too
+		// loading only adds rows: clear first or removed skins stay
 		GPlayerWeaponsInfo.TryRemove(slot, out _);
 		GPlayersKnife.TryRemove(slot, out _);
 		GPlayersGlove.TryRemove(slot, out _);

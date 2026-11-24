@@ -6,8 +6,7 @@ using CounterStrikeSharp.API.Modules.Menu;
 
 namespace WeaponPaints;
 
-// Menu in the middle of the screen (center HTML), no MenuManager needed:
-// one item at a time with its picture, A/D to scroll, E to pick, R to close.
+// center HTML menu, no MenuManager: A/D scroll, E pick, R close
 internal class ScreenMenu(string title) : IMenu
 {
 	public string Title { get; set; } = title;
@@ -15,10 +14,9 @@ internal class ScreenMenu(string title) : IMenu
 	public PostSelectAction PostSelectAction { get; set; } = PostSelectAction.Close;
 	public bool ExitButton { get; set; } = true;
 
-	// What the screen shows for an option (the handlers still get option.Text)
+	// handlers still get option.Text
 	internal readonly Dictionary<ChatMenuOption, (string Display, string Image)> Meta = new();
 
-	// Text of the option the player has now: the menu opens on it
 	internal Func<CCSPlayerController, string?>? Current;
 
 	public ChatMenuOption AddMenuOption(string display, Action<CCSPlayerController, ChatMenuOption> onSelect, bool disabled = false)
@@ -98,13 +96,13 @@ public partial class WeaponPaints
 			{
 				var option = options[open.Selected];
 				if (option.Disabled) continue;
-				// Close first: the handler may open the next menu (weapon list -> skins)
+				// close first: the handler may open another menu
 				if (open.Menu.PostSelectAction == PostSelectAction.Close) CloseScreenMenu(slot);
 				option.OnSelect?.Invoke(player, option);
 				continue;
 			}
 
-			// Stand still while scrolling with A/D
+			// A/D scroll the menu
 			var pawn = player.PlayerPawn.Value;
 			if (pawn != null)
 			{
@@ -133,7 +131,7 @@ public partial class WeaponPaints
 		player.PrintToCenterHtml(sb.ToString());
 	}
 
-	// Chat colour codes and {tags} mean nothing in center HTML
+	// chat colours and {tags} don't work in center HTML
 	private static string Html(string text)
 	{
 		var clean = Regex.Replace(text, @"\{[a-zA-Z]+\}|[\x00-\x1F]", "").Trim();

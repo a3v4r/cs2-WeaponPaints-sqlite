@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# Copies the item lists (skins, gloves, agents, stickers, keychains, music, pins) from the original
-# WeaponPaints (Nereziel/cs2-WeaponPaints, website/data) into data/ (the plugin) and website/data/.
-# Refuses lists that do not parse or lost more than a tenth of their items.
-# Last line of output: "changed" or "unchanged".
+# item lists from Nereziel/cs2-WeaponPaints website/data -> data/ and website/data/
+# rejects lists that don't parse or shrank by more than 10%; prints changed/unchanged
 set -euo pipefail
 cd "$(dirname "$0")/.."
 

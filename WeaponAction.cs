@@ -392,8 +392,7 @@ namespace WeaponPaints
 
 			if (!hasPluginGlove)
 			{
-				// "Gloves | Default" (or no glove chosen). Leave inventory gloves alone, but drop a glove
-				// the plugin applied earlier: the pawn keeps it across respawns.
+				// default or none: keep inventory gloves, but drop ours (the pawn keeps it across respawns)
 				if (IsPluginGlove(item.ItemDefinitionIndex, item.AccountID))
 				{
 					item.NetworkedDynamicAttributes.Attributes.RemoveAll();

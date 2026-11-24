@@ -211,11 +211,9 @@ namespace WeaponPaints
 				_ => WeaponPaints.MenuApi?.NewMenu(title)
 			};
 
-			// No MenuManager on the server: the built-in screen menu instead of no menu at all
 			return menu ?? new ScreenMenu(title);
 		}
 
-		// Adds an option; the screen menu shows it as `display` with its picture
 		internal static void AddOption(IMenu? menu, string text, Action<CCSPlayerController, ChatMenuOption> onSelect, string? display = null, string? image = null)
 		{
 			if (menu == null) return;
@@ -227,13 +225,12 @@ namespace WeaponPaints
 			else menu.AddMenuOption(text, onSelect);
 		}
 
-		// The option the player has now (by its text): the screen menu opens on it
 		internal static void SetCurrent(IMenu? menu, Func<CCSPlayerController, string?> current)
 		{
 			if (menu is ScreenMenu screen) screen.Current = current;
 		}
 
-		// Compared with the latest release of this fork, not with the original plugin (its versions differ)
+		// fork versions don't match the original's
 		private const string ReleasesUrl = "https://github.com/a3v4r/cs2-WeaponPaints-sqlite/releases";
 
 		internal static async Task CheckVersion(string version, ILogger logger)
@@ -254,7 +251,7 @@ namespace WeaponPaints
 			}
 			catch (Exception)
 			{
-				// No internet (a LAN-only server) is normal: nothing to report
+				// LAN-only server, no internet
 			}
 		}
 
