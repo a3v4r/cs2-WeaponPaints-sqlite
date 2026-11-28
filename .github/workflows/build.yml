@@ -40,7 +40,7 @@ jobs:
         echo "$NEXT" > VERSION
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add data website/data WeaponPaints.cs VERSION
+        git add data WeaponPaints.cs VERSION
         git commit -q -m "Version $NEXT: item lists from the original WeaponPaints"
         git push -q
         echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

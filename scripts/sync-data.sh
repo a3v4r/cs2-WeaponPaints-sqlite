@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# item lists from Nereziel/cs2-WeaponPaints website/data -> data/ and website/data/
+# item lists from Nereziel/cs2-WeaponPaints website/data -> data/
 # rejects lists that don't parse or shrank by more than 10%; prints changed/unchanged
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -28,5 +28,4 @@ console.log(`${files.length} lists checked`);
 EOF
 
 cp "$src"/*.json data/
-cp "$src"/*.json website/data/
-if [ -z "$(git status --porcelain -- data website/data)" ]; then echo unchanged; else echo changed; fi
+if [ -z "$(git status --porcelain -- data)" ]; then echo unchanged; else echo changed; fi
